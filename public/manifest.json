@@ -1,0 +1,18 @@
+{
+  "addOns": {
+    "common": {
+      "name": "Medforce Adverse Events canvas",
+      "logoUrl": "https://www.gstatic.com/images/branding/product/1x/apps_script_48dp.png"
+    },
+    "meet": {
+      "web": {
+        "sidePanelUrl": "https://new-board-seven.vercel.app/meet/sidepanel",
+        "supportsScreenSharing": true,
+        "addOnOrigins": [
+          "https://new-board-seven.vercel.app"
+        ],
+        "logoUrl": "https://www.gstatic.com/images/branding/product/1x/apps_script_48dp.png"
+      }
+    }
+  }
+}

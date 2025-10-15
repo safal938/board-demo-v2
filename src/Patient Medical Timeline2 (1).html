@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///Users/adrienverny/Downloads/timeline.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Medical Timeline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .legend {
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .swatch {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 3000px;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #007bff;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            z-index: -1;
+        }
+        .med-line {
+            position: absolute;
+            width: 6px;
+            border-radius: 2px;
+            z-index: 0;
+            cursor: pointer;
+        }
+        .container {
+            padding: 10px 40px;
+            position: absolute;
+            background-color: inherit;
+            width: 45%;
+        }
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #007bff;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .right::after {
+            left: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .content p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .bar-chart {
+            margin-top: 15px;
+        }
+        .bar-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .bar-container {
+            width: 100%;
+            background-color: #eee;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .bar {
+            height: 100%;
+            background-color: #ff0000; /* Red for adverse */
+            text-align: right;
+            padding-right: 5px;
+            color: white;
+            font-size: 12px;
+            line-height: 20px;
+            box-sizing: border-box;
+        }
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .container::after {
+                left: 15px;
+            }
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="legend">
+        <h2>Medication Key</h2>
+        <div><span class="swatch" style="background-color: #ff0000;"></span> Methotrexate</div>
+        <div><span class="swatch" style="background-color: #00ff00;"></span> Folic Acid</div>
+        <div><span class="swatch" style="background-color: #0000ff;"></span> Lisinopril</div>
+        <div><span class="swatch" style="background-color: #ff00ff;"></span> TMP-SMX</div>
+    </div>
+    <div class="timeline">
+        <div class="med-line" style="background-color: #ff0000; left: calc(50% - 12px); top: 0%; height: 100%;" title="Methotrexate"></div>
+        <div class="med-line" style="background-color: #00ff00; left: calc(50% - 20px); top: 0%; height: 100%;" title="Folic Acid"></div>
+        <div class="med-line" style="background-color: #0000ff; left: calc(50% - 28px); top: 31.14%; height: calc(100% - 31.14%);" title="Lisinopril"></div>
+        <div class="med-line" style="background-color: #ff00ff; left: calc(50% - 36px); top: 99.83%; height: calc(100% - 99.83%);" title="TMP-SMX"></div>
+        <div class="container left" style="top: calc(0% - 15px);">
+            <div class="content">
+                <h2>2015-08-10 (Age 53)</h2>
+                <p><strong>Event:</strong> Rheumatology Consult</p>
+                <p><strong>Key Diagnoses:</strong> Rheumatoid Arthritis (RA)</p>
+                <p><strong>Medication Changes:</strong> START: Methotrexate 10mg/week; START: Folic Acid 5mg/week</p>
+                <p><strong>Notes:</strong> Patient is a current smoker (35 pack-years) and consumes 1-2 beers daily. Counseled to avoid alcohol with Methotrexate.</p>
+                <div class="bar-chart">
+                    <p class="bar-label">Adverse Event Confidence Score: 20%</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 20%;">20%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container right" style="top: calc(5.38% - 15px);">
+            <div class="content">
+                <h2>2016-02-20 (Age 54)</h2>
+                <p><strong>Event:</strong> GP Review</p>
+                <p><strong>Key Diagnoses:</strong> RA (Stable)</p>
+                <p><strong>Medication Changes:</strong> No Change</p>
+                <p><strong>Notes:</strong> RA symptoms well-controlled. Still smoking. Reports reduced alcohol intake, but counseled again on avoidance.</p>
+                <div class="bar-chart">
+                    <p class="bar-label">Adverse Event Confidence Score: 15%</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 15%;">15%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container left" style="top: calc(14.15% - 15px);">
+            <div class="content">
+                <h2>2017 (Age ~55)</h2>
+                <p><strong>Event:</strong> (Implied)</p>
+                <p><strong>Key Diagnoses:</strong> No Change</p>
+                <p><strong>Medication Changes:</strong> No Change</p>
+                <p><strong>Notes:</strong> Patient successfully quits smoking. (Noted in 2018 encounter).</p>
+                <div class="bar-chart">
+                    <p class="bar-label">Adverse Event Confidence Score: 5%</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 5%;">5%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container right" style="top: calc(31.14% - 15px);">
+            <div class="content">
+                <h2>2018-09-05 (Age 56)</h2>
+                <p><strong>Event:</strong> GP Review</p>
+                <p><strong>Key Diagnoses:</strong> Essential Hypertension</p>
+                <p><strong>Medication Changes:</strong> INCREASE: Methotrexate to 20mg/week; START: Lisinopril 10mg/day</p>
+                <p><strong>Notes:</strong> Diagnosed with hypertension. MTX dose increased due to mild RA flare-ups. Continues to drink 1-2 beers/day.</p>
+                <div class="bar-chart">
+                    <p class="bar-label">Adverse Event Confidence Score: 40%</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 40%;">40%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container left" style="top: calc(56.73% - 15px);">
+            <div class="content">
+                <h2>2021-03-15 (Age 59)</h2>
+                <p><strong>Event:</strong> GP Review</p>
+                <p><strong>Key Diagnoses:</strong> CKD Stage 3</p>
+                <p><strong>Medication Changes:</strong> No Change</p>
+                <p><strong>Notes:</strong> Diagnosed with mild Chronic Kidney Disease (eGFR ~55). RA and hypertension are stable and controlled.</p>
+                <div class="bar-chart">
+                    <p class="bar-label">Adverse Event Confidence Score: 30%</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 30%;">30%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container right" style="top: calc(99.83% - 15px);">
+            <div class="content">
+                <h2>2025-06-15 (Age 63)</h2>
+                <p><strong>Event:</strong> GP Visit (Critical Error)</p>
+                <p><strong>Key Diagnoses:</strong> Acute Sinusitis</p>
+                <p><strong>Medication Changes:</strong> START: Trimethoprim-Sulfamethoxazole (TMP-SMX)</p>
+                <p><strong>Notes:</strong> Critical Error: TMP-SMX prescribed without checking for a known severe interaction with Methotrexate, especially in the context of pre-existing CKD.</p>
+                <div class="bar-chart">
+                    <p class="bar-label">Adverse Event Confidence Score: 90%</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container left" style="top: calc(100% - 15px);">
+            <div class="content">
+                <h2>2025-06-21 (Age 63)</h2>
+                <p><strong>Event:</strong> Emergency Admission</p>
+                <p><strong>Key Diagnoses:</strong> Acute Liver Injury; Hepatic Encephalopathy; Methotrexate Toxicity</p>
+                <p><strong>Medication Changes:</strong> HOLD: Methotrexate; HOLD: TMP-SMX; START: IV Fluids, Lactulose, NAC</p>
+                <p><strong>Notes:</strong> Admitted to hospital with jaundice, confusion, and epigastric pain 6 days after starting TMP-SMX. Diagnosis is acute liver failure due to drug toxicity.</p>
+                <div class="bar-chart">
+                    <p class="bar-label">Adverse Event Confidence Score: 100%</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 100%;">100%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body></html>

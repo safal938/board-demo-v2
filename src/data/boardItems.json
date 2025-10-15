@@ -1,0 +1,2380 @@
+[
+
+  {
+    "id": "ehr-item-1",
+    "type": "ehr",
+    "x": 650,
+    "y": 50,
+    "width": 550,
+    "height": 450,
+    "content": "EHR Data",
+    "color": "#e8f5e8",
+    "rotation": 0,
+    "obj_description": "Patient EHR record for Sarah Johnson - Cardiology consultation with heart condition assessment",
+    "ehrData": {
+      "encounter_id": "enc-2015-08-10-001",
+      "source_system": "Oracle Health EHR",
+      "patient": {
+        "id": "unknown",
+        "name": "Sarah Miller",
+        "age": 43,
+        "sex": "Female",
+        "dob": "1980-10-15"
+      },
+      "encounter_metadata": {
+        "date": "2015-08-10",
+        "time": "11:00",
+        "type": "Outpatient",
+        "clinician": "Dr. Elizabeth Hayes",
+        "specialty": "Rheumatology",
+        "visit_reason": "Bilateral joint pain and swelling."
+      },
+      "subjective": {
+        "chief_complaint": "Bilateral joint pain and swelling.",
+        "history_of_present_illness": "History of Present Illness (HPI) Mrs. Sarah Miller, a 43-year-old retired accountant, presents with a 6-month history of progressive, symmetrical joint pain and swelling, primarily affecting the small joints of his hands (MCPs, PIPs) and feet (MTPs). He reports significant morning stiffness lasting over an hour daily, and considerable fatigue impacting his daily activities. He has tried over-the-counter NSAIDs with limited relief. Symptoms are worse in the mornings and improve slightly with movement. No fever, rash, or other systemic symptoms noted. Denies any recent infections.",
+        "ros": {
+          "cardiovascular": "No chest pain, palpitations.",
+          "pulmonary": "No cough, shortness of breath. Occasional morning smoker's cough.",
+          "gi": "No nausea, vomiting, diarrhea, constipation. Appetite good.",
+          "neuro": "No headaches, dizziness, focal deficits.",
+          "msk": "As per HPI. Pain 7/10 at worst. Morning stiffness > 60 minutes.",
+          "skin": "No rashes, skin changes.",
+          "gu": "No dysuria, frequency."
+        }
+      },
+      "history": {
+        "pmh": [
+          "Liver-related: None",
+          "Cirrhosis complications: None",
+          "Comorbidities: None known"
+        ],
+        "psh": [
+          "Appendectomy (childhood)"
+        ],
+        "medications": [
+          {
+            "name": "Ibuprofen",
+            "dose": "200mg",
+            "status": "prn"
+          }
+        ],
+        "allergies": [],
+        "family_history": [
+          "Father: Hypertension, Type 2 Diabetes.",
+          "Mother: Osteoarthritis.",
+          "No known family history of autoimmune diseases or liver disease."
+        ],
+        "social_history": {
+          "alcohol": "Alcohol: 1-2 beers/day (approx. 7-14 units/week), reports consistent intake for many years. Denies binge drinking.",
+          "smoking": "Smoking: Current smoker, approximately 1 pack/day. Started smoking at age 18 (thus, 35 pack-years at this point).",
+          "ivdu": "IVDU: Denies.",
+          "occupation": "Occupation: Retired carpenter since 2013. Prior occupational exposures to wood dust, solvents.",
+          "travel": "Travel: No recent travel to endemic areas for infectious diseases.",
+          "sexual_history": "Sexual history: Married, monogamous."
+        }
+      },
+      "objective": {
+        "physical_exam": {
+          "general": "Appears fatigued, but comfortable at rest. NAD.",
+          "abdomen": "Soft, non-tender, non-distended. No organomegaly.",
+          "peripheral": "No pedal edema, no clubbing.",
+          "cns": "Alert and oriented x3.",
+          "skin": "No rashes, no jaundice, no spider nevi.",
+          "msk": "Bilateral swelling and tenderness of MCPs (2nd, 3rd), PIPs (2nd, 3rd), and MTPs (2nd, 3rd). Synovitis palpable. Reduced grip strength bilaterally. ROM limited due to pain in affected joints."
+        }
+      },
+      "diagnoses": [
+        {
+          "label": "Seropositive Rheumatoid Arthritis (RA), active disease.",
+          "certainty": "working"
+        }
+      ],
+      "differential_diagnoses": [
+        "Psoriatic Arthritis",
+        "Systemic Lupus Erythematosus (SLE)",
+        "Crystal Arthropathy (Gout, Pseudogout)"
+      ],
+      "orders": {
+        "labs": [
+          {
+            "name": "RF",
+            "status": "ordered"
+          },
+          {
+            "name": "Anti-CCP",
+            "status": "ordered"
+          },
+          {
+            "name": "ESR",
+            "status": "ordered"
+          },
+          {
+            "name": "CRP",
+            "status": "ordered"
+          },
+          {
+            "name": "CBC with differential",
+            "status": "ordered"
+          },
+          {
+            "name": "LFTs (ALT, AST, Alk Phos, Total/Direct Bilirubin)",
+            "status": "ordered"
+          },
+          {
+            "name": "Creatinine",
+            "status": "ordered"
+          },
+          {
+            "name": "eGFR",
+            "status": "ordered"
+          },
+          {
+            "name": "HBsAg",
+            "status": "ordered"
+          },
+          {
+            "name": "Anti-HBc Total",
+            "status": "ordered"
+          },
+          {
+            "name": "Anti-HCV",
+            "status": "ordered"
+          }
+        ],
+        "imaging": [
+          {
+            "modality": "X-ray",
+            "body_part": "Chest",
+            "status": "ordered"
+          }
+        ],
+        "procedures": []
+      },
+      "assessment": "Active seropositive rheumatoid arthritis.",
+      "plan": [
+        {
+          "category": "medication",
+          "text": "Start Methotrexate 10mg once weekly with Folic Acid 5mg weekly"
+        },
+        {
+          "category": "investigation",
+          "text": "Baseline labs (CBC, LFTs, Renal, ESR/CRP), Hep B/C serologies, Chest X-ray"
+        },
+        {
+          "category": "education",
+          "text": "RA and MTX education; avoid alcohol while on MTX; smoking cessation"
+        },
+        {
+          "category": "follow_up",
+          "text": "GP blood tests every 4 weeks for 3 months; Rheumatology clinic review in 3 months"
+        }
+      ],
+      "medication_changes": [
+        {
+          "action": "start",
+          "name": "Methotrexate",
+          "new_sig": "10mg orally once weekly",
+          "rationale": "Initial RA therapy"
+        },
+        {
+          "action": "start",
+          "name": "Folic Acid",
+          "new_sig": "5mg orally once weekly (24h after MTX)",
+          "rationale": "Reduce MTX toxicity"
+        }
+      ],
+      "counseling_education": [
+        "Smoking cessation counseling",
+        "Discussed Methotrexate risks and monitoring"
+      ],
+      "disposition": {
+        "status": "clinic_followup",
+        "instructions": [
+          "Return if fever, rash, jaundice, or dyspnea"
+        ]
+      },
+      "coding": {
+        "icd10": [
+          "M05.9"
+        ],
+        "cpt": [
+          "99204 (New patient office visit, moderate complexity)"
+        ]
+      },
+      "reconciliation": {
+        "medication_reconciliation_status": "complete",
+        "allergy_reconciliation_status": "complete",
+        "note_review_status": "final"
+      },
+      "note_status": "FINALIZED"
+    }
+  },
+  {
+    "id": "ehr-item-2",
+    "type": "ehr",
+    "x": 1250,
+    "y": 50,
+    "width": 550,
+    "height": 450,
+    "content": "EHR Data",
+    "color": "#e8f5e8",
+    "rotation": 0,
+    "obj_description": "Patient EHR record for Sarah Miller - Neurology visit for migraine management and treatment plan",
+    "ehrData": {
+      "encounter_id": "enc-2016-02-20-002",
+      "source_system": "GP Patient Note System",
+      "patient": {
+        "id": "unknown",
+        "name": "Sarah Miller",
+        "dob": "1980-10-15"
+      },
+      "encounter_metadata": {
+        "date": "2016-02-20",
+        "time": "09:30 AM",
+        "type": "Outpatient",
+        "specialty": "General Practice",
+        "visit_reason": "Routine Methotrexate monitoring and RA review."
+      },
+      "subjective": {
+        "chief_complaint": "Routine Methotrexate monitoring and RA review.",
+        "history_of_present_illness": "Mrs. Sarah Miller reports good control of his RA symptoms on Methotrexate 10mg weekly. Joint pain and stiffness significantly reduced. No new side effects of methotrexate reported (no significant nausea, mouth ulcers, or fatigue). Reports occasional joint aches but overall well-being improved. Adherence to MTX and folic acid is good. Denies any new health concerns.\nReview of Medications:\nMethotrexate 10mg/week\nFolic Acid 5mg/week\nOccasional paracetamol\nAlcohol and Smoking History (Structured Tabs):\nAlcohol Use: States he has reduced alcohol intake to \"only on weekends, maybe a couple of beers.\" Still approx. 4-8 units/week. Advised again on complete avoidance with MTX.\nSmoking: Still smoking, approximately 15 cigarettes/day. Advised again on smoking cessation.\nExamination:\nGeneral: Appears well. No jaundice.\nMSK: No active synovitis. Mild residual deformities in hands.\nVitals: BP 132/80 mmHg, HR 70 bpm, RR 16/min, Temp 36.7°C.\nImpression: Stable Rheumatoid Arthritis on Methotrexate.\nPlan:\nContinue Methotrexate 10mg/week and Folic Acid 5mg/week.\nOrder routine MTX monitoring labs (CBC, LFTs, Renal Function).\nReinforce strict alcohol avoidance and smoking cessation counseling.\nReferral to stop-smoking clinic offered.\nCoded Diagnoses:\nSNOMED: 69896004 | Rheumatoid arthritis (disorder)\nCode linked to QOF: RA (Rheumatoid Arthritis)\nTasks / Prescriptions:\nLab Orders: CBC, LFTs, Creatinine, eGFR.\nNext Review: In 3 months for next MTX monitoring."
+      },
+      "history": {
+        "medications": [
+          {
+            "name": "Methotrexate 10mg/week",
+            "status": "current"
+          },
+          {
+            "name": "Folic Acid 5mg/week",
+            "status": "current"
+          },
+          {
+            "name": "Occasional paracetamol",
+            "status": "current"
+          }
+        ],
+        "social_history": {
+          "alcohol": "Alcohol Use: States he has reduced alcohol intake to \"only on weekends, maybe a couple of beers.\" Still approx. 4-8 units/week. Advised again on complete avoidance with MTX.",
+          "smoking": "Still smoking, approximately 15 cigarettes/day. Advised again on smoking cessation."
+        }
+      },
+      "objective": {
+        "vitals": {
+          "bp": "132/80",
+          "hr": "70",
+          "rr": "16",
+          "temp_c": "36.7"
+        },
+        "physical_exam": {
+          "general": "Appears well. No jaundice.",
+          "msk": "No active synovitis. Mild residual deformities in hands."
+        }
+      },
+      "diagnoses": [
+        {
+          "label": "Rheumatoid arthritis",
+          "coding_system": "SNOMED",
+          "code": "69896004",
+          "certainty": "stable"
+        }
+      ],
+      "orders": {
+        "labs": [
+          {
+            "name": "CBC",
+            "status": "ordered"
+          },
+          {
+            "name": "LFTs",
+            "status": "ordered"
+          },
+          {
+            "name": "Creatinine",
+            "status": "ordered"
+          },
+          {
+            "name": "eGFR.",
+            "status": "ordered"
+          }
+        ]
+      },
+      "assessment": "Stable Rheumatoid Arthritis on Methotrexate.",
+      "plan": [
+        {
+          "category": "medication",
+          "text": "Continue Methotrexate 10mg/week and Folic Acid 5mg/week."
+        },
+        {
+          "category": "investigation",
+          "text": "Order routine MTX monitoring labs (CBC, LFTs, Renal Function)."
+        },
+        {
+          "category": "education",
+          "text": "Reinforce strict alcohol avoidance and smoking cessation counseling."
+        },
+        {
+          "category": "education",
+          "text": "Referral to stop-smoking clinic offered."
+        }
+      ],
+      "counseling_education": [
+        "Smoking cessation counseling",
+        "Alcohol avoidance reinforced with Methotrexate"
+      ],
+      "disposition": {
+        "status": "clinic_followup",
+        "instructions": [
+          "In 3 months for next MTX monitoring."
+        ]
+      },
+      "coding": {
+        "snomed": [
+          "69896004 | Rheumatoid arthritis (disorder)"
+        ],
+        "qof": [
+          "RA (Rheumatoid Arthritis)"
+        ]
+      },
+      "reconciliation": {
+        "medication_reconciliation_status": "complete",
+        "allergy_reconciliation_status": "unknown",
+        "note_review_status": "final"
+      },
+      "note_status": "FINALIZED"
+    }
+  },
+  {
+    "id": "ehr-item-3",
+    "type": "ehr",
+    "x": 1850,
+    "y": 50,
+    "width": 550,
+    "height": 450,
+    "content": "EHR Data",
+    "color": "#e8f5e8",
+    "rotation": 0,
+    "obj_description": "Patient EHR record for Emily Rodriguez - Dermatology consultation for skin condition evaluation",
+    "ehrData": {
+      "encounter_id": "EHR-MC-001001-20241020-01Date: 2024-10-20Doctor: Dr. M. Evergreen, RheumatologyPatient ID: PT-RHEUM-2024-001MRN: MRN-9876543DOB: 08/15/1972",
+      "source_system": "Rheumatology Clinic EHR",
+      "patient": {
+        "id": "PT-RHEUM-2024-001MRN: MRN-9876543DOB: 08/15/1972",
+        "mrn": "MRN-9876543DOB: 08/15/1972",
+        "dob": "1980-10-15",
+        "sex": "Female",
+        "name": "Sarah Miller"
+      },
+      "encounter_metadata": {
+        "date": "2024-10-20",
+        "type": "Outpatient",
+        "clinician": "Dr. M. Evergreen, RheumatologyPatient ID: PT-RHEUM-2024-001MRN: MRN-9876543DOB: 08/15/1972",
+        "specialty": "Rheumatology",
+        "visit_reason": "Acute exacerbation of RA symptoms, increased pain/swelling in wrists and feet."
+      },
+      "subjective": {
+        "chief_complaint": "Acute exacerbation of RA symptoms, increased pain/swelling in wrists and feet.",
+        "history_of_present_illness": "Patient is a 53 y.o. female, established in clinic for long-standing seropositive rheumatoid arthritis, presenting today with a significant flair up. Reports increased pain and swelling over the past two weeks, now limiting her ability to perform daily activities, particularly morning stiffness which lasts for several hours, worse than usual. She denies any fever, chills, or recent infection/URI symptoms. No new rashes or oral ulcers noted. Reports pain is 8/10 at its worst, usually around 5/10. She has been taking her Xeljanz 5mg BID consistently, adherence was good, per patient report. Ibuprofen 400mg PRN not providing adequate relief. Denies any trauma. Last flare was 3 months ago and resolved with a short course of steroids, which she is reluctant to do again due to previous side effects.",
+        "ros": {
+          "general": "Fatigue ++, denying fevers/chills. No recent weight changes.",
+          "heent": "Denies blurred vision, dry eyes, oral ulcers or dysphagia.",
+          "cardiovascular": "Denies chest pain, palpitations, edema.",
+          "pulmonary": "Denies cough, SOB.",
+          "gi": "Denies nausea, vomiting, diarrhea, constipation, abd pain. Regular bowel movements.",
+          "gu": "Denies dysuria, frequency, urgency.",
+          "musculoskeletal": "Significant joint pain and swelling as detailed above. Worse in hands and feet. No back pain. No generalized muscle weakness.",
+          "skin": "No new rashes, lesions, or hair loss.",
+          "neurological": "Denies numbness, tingling, weakness (except as related to joint pain), headaches, seizures.",
+          "psychiatric": "Denies depression, anxiety. Mood seems stable."
+        }
+      },
+      "history": {
+        "pmh": [
+          "Rheumatoid Arthritis (seropositive), dx 2010.",
+          "Hypertension - controlled with lisinopril.",
+          "Hyperlipidemia - on statin.",
+          "GERD – on PPI.",
+          "Previous carpal tunnel surgery bilaterally (2018).",
+          "Obesity Class I.",
+          "Anemia – resolved with iron supplementation last year."
+        ],
+        "medications": [
+          {
+            "name": "Xeljanz (tofacitinib) 5mg BID",
+            "status": "current"
+          },
+          {
+            "name": "Lisinopril 10mg daily",
+            "status": "current"
+          },
+          {
+            "name": "Atorvastatin 20mg nightly",
+            "status": "current"
+          },
+          {
+            "name": "Omeprazole 20mg daily",
+            "status": "current"
+          },
+          {
+            "name": "Ibuprofen 400mg PRN (as needed for pain, but has been taking daily lately)",
+            "status": "current"
+          },
+          {
+            "name": "Folic Acid 1mg daily (due to methotrexate, though not currently on MTX - need to reconcile this)",
+            "status": "current"
+          },
+          {
+            "name": "Patient denies any new OTC meds but mentions trying turmeric supplements.",
+            "status": "current"
+          }
+        ],
+        "allergies": [
+          {
+            "substance": "Penicillin (hives/rash)"
+          },
+          {
+            "substance": "Sulfa (GI upset)"
+          },
+          {
+            "substance": "Codeine (nausea)"
+          }
+        ],
+        "social_history": {
+          "summary": "Lives with husband, no children. Works part-time as a bookkeeper. Denies smoking. Occasional alcohol use (1-2 drinks/week). No illicit drug use.",
+          "smoking": "Never smoker",
+          "alcohol": "1-2 drinks/week"
+        },
+        "family_history": [
+          "Mother with RA and osteoporosis. Father deceased from MI. Sister with Hashimoto's."
+        ]
+      },
+      "objective": {
+        "vitals": {
+          "bp": "132/84",
+          "hr": "78",
+          "rr": "16",
+          "temp_f": "98.6",
+          "spo2_pct": "99",
+          "weight_lbs": "165",
+          "bmi": "29.8"
+        },
+        "physical_exam": {
+          "msk": "Active synovitis in MCPs/PIPs of hands and MTPs of feet; ROM limited; antalgic gait."
+        }
+      },
+      "diagnoses": [
+        {
+          "label": "Rheumatoid arthritis, seropositive",
+          "coding_system": "ICD-10",
+          "code": "M05.9",
+          "certainty": "exacerbation"
+        }
+      ],
+      "orders": {
+        "labs": [
+          {
+            "name": "CBC with diff",
+            "status": "ordered"
+          },
+          {
+            "name": "LFTs",
+            "status": "ordered"
+          },
+          {
+            "name": "Renal Panel",
+            "status": "ordered"
+          },
+          {
+            "name": "CRP",
+            "status": "ordered"
+          },
+          {
+            "name": "ESR",
+            "status": "ordered"
+          },
+          {
+            "name": "uric acid",
+            "status": "ordered"
+          },
+          {
+            "name": "CRP",
+            "value": "28 mg/L",
+            "status": "resulted"
+          },
+          {
+            "name": "ESR",
+            "value": "38 mm/hr",
+            "status": "resulted"
+          }
+        ],
+        "imaging": [
+          {
+            "modality": "X-ray",
+            "body_part": "Hands/Feet",
+            "status": "performed",
+            "result_summary": "No new erosions or significant joint space narrowing identified compared to prior studies from 06/2023. Stable disease, reassuring given current flare. Chronic changes consistent with RA.",
+            "external_id": "VUE-MC-001001-20241020-XR-HANDSFET"
+          }
+        ]
+      },
+      "assessment": "Acute flare of seropositive rheumatoid arthritis with elevated inflammatory markers; imaging stable.",
+      "plan": [
+        {
+          "category": "plan",
+          "text": "28 mg/L (elevated, consistent with inflammation)"
+        },
+        {
+          "category": "investigation",
+          "text": "ESR: 38 mm/hr (elevated)"
+        },
+        {
+          "category": "medication",
+          "text": "CBC with diff, LFTs, Renal Panel (to monitor Xeljanz safety and general health)"
+        },
+        {
+          "category": "investigation",
+          "text": "Imaging Reviewed:"
+        },
+        {
+          "category": "plan",
+          "text": "VueExplore PACS ID: VUE-MC-001001-20241020-XR-HANDSFET"
+        },
+        {
+          "category": "investigation",
+          "text": "X-rays of hands and feet: No new erosions or significant joint space narrowing identified compared to prior studies from 06/2023. Stable disease, reassuring given current flare. Chronic changes consistent with RA."
+        },
+        {
+          "category": "plan",
+          "text": "ASSESSMENT AND PLAN:"
+        },
+        {
+          "category": "medication",
+          "text": "A:52 y.o. female with known seropositive rheumatoid arthritis presenting with acute flare of RA symptoms, primarily involving the hands and feet. She reports increased pain and swelling which is affecting daily function, despite good adherence to her Xeljanz. Physical exam confirms active synovitis in multiple MCPs and MTPs bilaterally. Initial inflammatory markers are elevated. X-rays of hands and feet are reassuring, showing no new erosions or progression of joint damage, which is good. This suggests a systemic inflammatory flare rather than mechanical progression of damage at this time. We need to get these labs back to confirm."
+        },
+        {
+          "category": "plan",
+          "text": "P:"
+        },
+        {
+          "category": "plan",
+          "text": "Rheumatoid Arthritis (M05.9): Acute exacerbation."
+        },
+        {
+          "category": "medication",
+          "text": "Medication Adjustment: Advised patient to increase ibuprofen to 600mg TID PRN for now, ensuring taken with food, to help manage pain and inflammation. Reviewed appropriate dosing and signs of GI irritation. Discussed patient's reluctance for oral steroids, will hold off for now given stable imaging. Will re-evaluate need for short course of prednisone if symptoms do not improve in next 7-10 days."
+        },
+        {
+          "category": "medication",
+          "text": "Xeljanz: Continue Xeljanz 5mg BID. Patient reports good adherence. We will review labs to ensure continued safety."
+        },
+        {
+          "category": "education",
+          "text": "Rest & Activity: Emphasized importance of rest during this flare. Recommended gentle ROM exercises as tolerated, avoid strenuous activities. Refer to OT for joint protection strategies."
+        },
+        {
+          "category": "medication",
+          "text": "Labs: Repeat labs (CBC, LFTs, Renal, CRP, ESR) in 4 weeks to monitor disease activity and medication safety. Will also check a uric acid at next visit."
+        },
+        {
+          "category": "investigation",
+          "text": "Imaging: X-rays of hands/feet completed today are stable with no new erosions. Good to rule out significant structural progression."
+        },
+        {
+          "category": "education",
+          "text": "Pain Management: Continue to manage with increased NSAID use as above. Educated on non-pharmacological methods like heat/cold packs."
+        },
+        {
+          "category": "investigation",
+          "text": "Follow-up: Schedule follow-up in 4-6 weeks in clinic to reassess RA activity, review labs, and adjust therapy as needed. Pt will call if symptoms worsen significantly or new concerns arise."
+        },
+        {
+          "category": "medication",
+          "text": "Pending medication reconciliation and review of old records for Folic Acid indication."
+        }
+      ],
+      "counseling_education": [
+        "NSAID GI precautions",
+        "Heat/cold therapy and joint protection",
+        "When to seek urgent care"
+      ],
+      "disposition": {
+        "status": "clinic_followup",
+        "instructions": [
+          "Follow-up in 4–6 weeks; earlier if worsening."
+        ]
+      },
+      "coding": {
+        "icd10": [
+          "M05.9"
+        ]
+      },
+      "reconciliation": {
+        "medication_reconciliation_status": "partial",
+        "allergy_reconciliation_status": "complete",
+        "note_review_status": "final"
+      },
+      "note_status": "FINALIZED"
+    }
+  },
+  {
+    "id": "ehr-item-4",
+    "type": "ehr",
+    "x": 2450,
+    "y": 50,
+    "width": 550,
+    "height": 450,
+    "content": "EHR Data",
+    "color": "#e8f5e8",
+    "rotation": 0,
+    "obj_description": "Patient EHR record for David Kim - Orthopedics visit for joint pain assessment and treatment",
+    "ehrData": {
+      "encounter_id": "EHR-MC-001001-20250125-01Date: 2025-01-25Doctor: Dr. Isabella Chen, DermatologyPatient ID: PID-2024-SKIN-001001MRN: MC-PAT-9087654DOB: 1978-07-22",
+      "source_system": "Dermatology Clinic EHR",
+      "patient": {
+        "id": "PID-2024-SKIN-001001MRN: MC-PAT-9087654DOB: 1978-07-22",
+        "mrn": "MC-PAT-9087654DOB: 1978-07-22",
+        "dob": "1980-10-15",
+        "sex": "Female",
+        "name": "Sarah Miller"
+      },
+      "encounter_metadata": {
+        "date": "2025-01-25",
+        "type": "Outpatient",
+        "clinician": "Dr. Isabella Chen, DermatologyPatient ID: PID-2024-SKIN-001001MRN: MC-PAT-9087654DOB: 1978-07-22",
+        "specialty": "Dermatology",
+        "visit_reason": "Persistent skin rash, worsening."
+      },
+      "subjective": {
+        "chief_complaint": "Persistent skin rash, worsening.",
+        "history_of_present_illness": "Pt is a 46-year-old female referred by Rheumatology (Dr. M. Patel, per chart review from 11/2024) for evaluation of chronic, scaly, erythematous plaques that have been present for several years but have reportedly worsened significantly in the past 6-8 months, despite previous efforts. Lesions are primarily on her bilateral elbows, knees, and scalp. She describes the rash as intensely itchy, especially at night, which disrupts sleep. Denies any new exposures or travel. Patient has been using topical desoximetasone 0.25% cream intermittently, prescribed by her PCP, but states it's \"not really doing much anymore.\" She thinks it used to help but now just makes skin greasy. Has tried OTC hydrocortisone and various moisturizers (Cetaphil, Eucerin) with no sustained relief. Reports mild joint stiffness in knees and hands but attributes it to age/stress. No fevers, chills, weight loss. Denies any recent infections.",
+        "ros": {
+          "constitutional": "Denies fever, chills, fatigue (contradicts HPI where she mentioned being tired due to itching). Denies weight changes.",
+          "eyes": "No blurred vision, diplopia.",
+          "ent": "No hearing changes, tinnitus, epistaxis.",
+          "cardiovascular": "Denies chest pain, palpitations.",
+          "pulmonary": "Denies SOB, cough.",
+          "gi": "Denies nausea, vomiting, diarrhea, constipation, abdominal pain.",
+          "gu": "Denies dysuria, frequency, urgency.",
+          "musculoskeletal": "Mild knee/hand stiffness, denies swelling or redness.",
+          "integumentary": "As per HPI. Itching, scaling, erythema. Denies new moles.",
+          "neurologic": "Denies headaches, dizziness, numbness, tingling.",
+          "psychiatric": "Denies depression, suicidal ideation. Manages anxiety with PRN meds.",
+          "endocrine": "Denies heat/cold intolerance, polyuria, polydipsia.",
+          "hematologic": "Denies easy bruising/bleeding.",
+          "allergic/immunologic": "Denies recurrent infections."
+        }
+      },
+      "history": {
+        "pmh": [
+          "Hypertension (controlled on lisinopril)",
+          "Dyslipidemia",
+          "Mild anxiety (managed PRN)",
+          "Obesity, Class I",
+          "Previous derm visit for eczema, approx. 5 yrs ago."
+        ],
+        "psh": [
+          "Appendectomy - childhood",
+          "C-section x1"
+        ],
+        "medications": [
+          {
+            "name": "Lisinopril 10 mg daily",
+            "status": "current"
+          },
+          {
+            "name": "Atorvastatin 20 mg daily",
+            "status": "current"
+          },
+          {
+            "name": "Alprazolam 0.25 mg PRN (anxiety)",
+            "status": "current"
+          },
+          {
+            "name": "Desoximetasone 0.25% cream - applied \"sometimes\" to affected areas.",
+            "status": "current"
+          },
+          {
+            "name": "Multivitamin daily",
+            "status": "current"
+          }
+        ],
+        "allergies": [
+          {
+            "substance": "NKDA"
+          }
+        ],
+        "social_history": {
+          "summary": "Lives with husband.\nDenied tobacco use. Occasional EtOH, 1-2 drinks/week.\nNo illicit drug use.\nWorks as an accountant.\nStress at work reported as high."
+        },
+        "family_history": [
+          "Mother: HTN, T2DM.\nFather: MI (age 60), Psoriasis (diagnosed late in life).\nSister: Hayfever."
+        ]
+      },
+      "objective": {
+        "vitals": {
+          "bp": "128/78",
+          "hr": "72",
+          "rr": "16",
+          "temp_f": "98.4",
+          "spo2_pct": "99",
+          "height": "5'4\"",
+          "weight_lbs": "170",
+          "bmi": "29.1."
+        },
+        "physical_exam": {
+          "skin": "Scalp: Thick, silvery-white scaling plaques, patchy distribution. Erythema noted underneath. No alopecia.\nElbows: Bilateral extensor surfaces exhibit well-demarcated, erythematous plaques with thick, adherent, silvery scales. Largest lesion on right elbow, approx 6x8 cm.\nKnees: Bilateral extensor surfaces with similar, smaller plaques, ~3x4 cm, less scale than elbows.\nNails: Mild pitting noted on fingernails, no onycholysis or subungual hyperkeratosis.\nRest of skin appears clear. No other rashes or suspicious lesions.",
+          "nails": "Mild pitting noted on fingernails, no onycholysis or subungual hyperkeratosis.",
+          "pulmonary": "CTAB.",
+          "cardiovascular": "RRR, no murmurs, rubs, gallops.",
+          "abdomen": "Soft, non-tender, non-distended, normoactive bowel sounds.",
+          "extremities": "No edema. Joints appear mobile, no significant swelling or warmth."
+        }
+      },
+      "diagnoses": [
+        {
+          "label": "Plaque psoriasis (chronic plaque-type)",
+          "coding_system": "ICD-10",
+          "code": "L40.0",
+          "certainty": "confirmed"
+        }
+      ],
+      "orders": {
+        "procedures": [
+          {
+            "name": "Punch biopsy - right elbow lesion",
+            "status": "performed",
+            "result_summary": "MC-001001-20250125-SKINBX - Punch biopsy from elbow shows features consistent with psoriasis. (Pathology result imported 3 days post-encounter)."
+          }
+        ]
+      },
+      "assessment": "Psoriasiform dermatitis consistent with chronic plaque psoriasis; biopsy supports diagnosis; current topical inadequate.",
+      "plan": [
+        {
+          "category": "plan",
+          "text": "Psoriasiform dermatitis, chronic plaque type, generalized, worsening."
+        },
+        {
+          "category": "plan",
+          "text": "This is an initial visit. Patient presents with classic findings of psoriasis on elbows, knees, and scalp, with associated pruritus. Clinical appearance highly suggestive of psoriasis. Referral from rheumatology for evaluation, and patient denies specific inflammatory joint symptoms but does report some stiffness."
+        },
+        {
+          "category": "plan",
+          "text": "Biopsy performed today from the right elbow, and findings from initial read are consistent with psoriasis (pending final path report). This confirms our clinical suspicion."
+        },
+        {
+          "category": "plan",
+          "text": "Current treatment with desoximetasone has been ineffective for symptom control; patient states inconsistent application."
+        },
+        {
+          "category": "plan",
+          "text": "Discussed the chronic nature of psoriasis and the goal of management to control symptoms."
+        },
+        {
+          "category": "plan",
+          "text": "Plan:"
+        },
+        {
+          "category": "education",
+          "text": "Continue with good skin care, gentle cleansers, regular emollients."
+        },
+        {
+          "category": "medication",
+          "text": "Discontinue current desoximetasone as it's not working."
+        },
+        {
+          "category": "medication",
+          "text": "Initiated Clobetasol propionate 0.05% cream BID to affected areas for 2 weeks. Instructed to apply thinly."
+        },
+        {
+          "category": "medication",
+          "text": "Also started Calcipotriene 0.005% ointment daily, alternating with clobetasol (e.g., clobetasol AM, calcipotriene PM). Emphasized not to use both at same time."
+        },
+        {
+          "category": "treatment_options",
+          "text": "Discussed potential for future systemic therapies (e.g., oral agents like methotrexate or biologics) if topical treatment fails or if joint involvement becomes clearer. Pt hesitant about oral meds at this time."
+        },
+        {
+          "category": "education",
+          "text": "Patient education provided regarding triggers, disease course, and treatment expectations. Gave handouts on psoriasis."
+        },
+        {
+          "category": "follow_up",
+          "text": "Follow-up: Re-evaluate in 4 weeks to assess response to new topical regimen and review final pathology report details."
+        },
+        {
+          "category": "treatment_options",
+          "text": "Consider referral to phototherapy if limited response to topicals."
+        }
+      ],
+      "counseling_education": [
+        "Provided psoriasis education: triggers, disease course, treatment expectations",
+        "Wound care instructions for biopsy site"
+      ],
+      "disposition": {
+        "status": "clinic_followup",
+        "instructions": [
+          "Re-evaluate in 4 weeks to assess response to new topical regimen and review final pathology report details."
+        ]
+      },
+      "coding": {
+        "icd10": [
+          "L40.0"
+        ]
+      },
+      "reconciliation": {
+        "medication_reconciliation_status": "partial",
+        "allergy_reconciliation_status": "partial",
+        "note_review_status": "draft"
+      },
+      "note_status": "PENDING_REVIEW",
+      "attachments": [
+        {
+          "type": "pathology",
+          "title": "Punch biopsy pathology (right elbow)"
+        }
+      ],
+      "signatures": [
+        {
+          "signed_by": "I. Chen, MD",
+          "role": "Dermatologist",
+          "timestamp": "2025-01-25T17:35:12"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ehr-item-5",
+    "type": "ehr",
+    "x": 3050,
+    "y": 50,
+    "width": 550,
+    "height": 450,
+    "content": "EHR Data",
+    "color": "#e8f5e8",
+    "rotation": 0,
+    "obj_description": "Patient EHR record for Lisa Wang - Endocrinology visit for diabetes management and monitoring",
+    "ehrData": {
+      "encounter_id": "EHR-MC-001001-20250410-01Date: 2025-04-10, 10:30 AMPatient ID: PID-MC-001001 | DOB: 1972-11-15 | MRN: MC1234567",
+      "source_system": "Rheumatology Clinic EHR",
+      "patient": {
+        "id": "PID-MC-001001",
+        "mrn": "MC1234567",
+        "dob": "1980-10-15",
+        "sex": "Female",
+        "name": "Sarah Miller"
+      },
+      "encounter_metadata": {
+        "date": "2025-04-10",
+        "time": "10:30 AMPa",
+        "type": "Outpatient",
+        "clinician": "Dr. S. Patel, RheumatologyTranscription ID: BH-MC-001001-20250410-CLINLET",
+        "specialty": "Rheumatology",
+        "visit_reason": "RA follow-up; review dermatology biopsy; fatigue evaluation"
+      },
+      "subjective": {
+        "chief_complaint": "Follow-up for RA; persistent fatigue; review biopsy results",
+        "history_of_present_illness": "Patient is a 52 y/o female, follow up for established RA management and review of recent dermatology biopsy results. She reports her RA symptoms are fairly well-controlled on Tofacitinib, \"no major flares\" since last visit. Denies significant joint swelling or warmth. However, she emphatically states that her fatigue remains a major issue, describing it as \"debilitating\" and \"always there,\" impacting her ability to concentrate and perform routine tasks. Rates fatigue as an 8/10 on most days. This is despite stable RA disease activity. She saw dermatology recently for a rash, the biopsy results of which were discussed today, confirming psoriasis. She reports using the topical cream as directed. Denies fever, chills, new cough. No weight changes. Appetite okay. Reports feeling generally \"run down\" but not acutely ill.",
+        "ros": {
+          "constitutional": "Denies fever, chills, night sweats. Reports chronic, significant fatigue.",
+          "heent": "WNL.",
+          "cardiovascular": "No chest pain, palpitations.",
+          "pulmonary": "No SOB, cough.",
+          "gastrointestinal": "No nausea, vomiting, diarrhea, constipation. No abdominal pain.",
+          "genitourinary": "No dysuria, frequency.",
+          "musculoskeletal": "Mild occasional generalized arthralgias, no significant synovitis noted today.",
+          "integumentary": "As discussed, psoriatic lesions on elbows and knees.",
+          "neurological": "No numbness, tingling, weakness. Headaches rare.",
+          "psychiatric": "No depression, anxiety (patient states \"just tired\").",
+          "endocrine": "Denies heat/cold intolerance.",
+          "hematologic": "No easy bruising/bleeding.",
+          "immunologic": "No recurrent infections."
+        }
+      },
+      "history": {
+        "pmh": [
+          "Rheumatoid Arthritis: Diagnosed 2018. Managed with various DMARDs, currently Tofacitinib.",
+          "Psoriasis: Newly confirmed by biopsy 2025. Appears to be mild-moderate.",
+          "Chronic Fatigue Syndrome: (Likely secondary to RA/Psoriasis, or independent component) Ongoing for >1 year.",
+          "Hypertension: Controlled.",
+          "Dyslipidemia: Stable.",
+          "GERD: PRN antacids.",
+          "Previous left knee arthroscopy 2019."
+        ],
+        "medications": [
+          {
+            "name": "Tofacitinib (Xeljanz) 5 mg PO BID (started 08/2023)",
+            "status": "current"
+          },
+          {
+            "name": "Desoximetasone 0.25% cream, apply to affected areas BID PRN",
+            "status": "current"
+          },
+          {
+            "name": "Lisinopril 10 mg PO QD",
+            "status": "current"
+          },
+          {
+            "name": "Simvastatin 20 mg PO QHS",
+            "status": "current"
+          },
+          {
+            "name": "Omeprazole 20 mg PO QD",
+            "status": "current"
+          },
+          {
+            "name": "Folic Acid 1 mg PO QD (Patient sometimes forgets this one, denies taking it consistently).",
+            "status": "current"
+          },
+          {
+            "name": "Previous entry: Methotrexate 15mg SC QW - DISCONTINUED 1/2024 - see last note. Why is this still here?",
+            "status": "discontinued"
+          }
+        ],
+        "allergies": [
+          {
+            "substance": "Penicillin",
+            "reaction": "rash, hives"
+          },
+          {
+            "substance": "Sulfa",
+            "reaction": "GI upset"
+          },
+          {
+            "substance": "NKDA"
+          }
+        ],
+        "social_history": {
+          "summary": "(Copied forward, no new changes noted by pt)\nLives with husband.\nFormer smoker (quit 10 years ago).\nOccasional alcohol use (1-2 drinks/week).\nEmployed part-time as an accountant, struggling with fatigue."
+        },
+        "family_history": [
+          "Mother: RA, HTN.\nFather: CAD, Type 2 DM.\nSister: Psoriasis.\nNo family history of colon cancer."
+        ]
+      },
+      "objective": {
+        "vitals": {
+          "bp": "132/82",
+          "hr": "78",
+          "rr": "16",
+          "temp_f": "98.2",
+          "weight_lbs": "165",
+          "bmi": "27.1"
+        },
+        "physical_exam": {
+          "general": "Appears comfortable but fatigued. Well-nourished, well-developed. No acute distress.",
+          "skin": "Erythematous, scaly plaques noted on bilateral extensor surfaces of elbows and knees, consistent with psoriasis. No active skin breakdown. Turgor good. No rashes elsewhere.",
+          "msk": "No acute tenderness, warmth, or swelling of joints. Full range of motion in shoulders, elbows, wrists, knees, ankles. No synovitis. No significant deformities. Grip strength 5/5.",
+          "cardiovascular": "No chest pain, palpitations.",
+          "pulmonary": "No SOB, cough.",
+          "abdomen": "Soft, non-tender, non-distended. BS present. No organomegaly.",
+          "neurological": "No numbness, tingling, weakness. Headaches rare."
+        }
+      },
+      "diagnoses": [
+        {
+          "label": "1. Rheumatoid Arthritis, well-controlled on Tofacitinib",
+          "coding_system": "ICD-10",
+          "code": "M05.9",
+          "certainty": "stable"
+        },
+        {
+          "label": "2. Psoriasis, new diagnosis",
+          "coding_system": "ICD-10",
+          "code": "L40.0",
+          "certainty": "stable"
+        },
+        {
+          "label": "3. Chronic Fatigue, significant impact on QOL",
+          "coding_system": "ICD-10",
+          "code": "R53.82",
+          "certainty": "working"
+        },
+        {
+          "label": "4. General Wellness/Preventive Care",
+          "certainty": "working"
+        }
+      ],
+      "orders": {
+        "labs": [
+          {
+            "name": "CRP",
+            "value": "4.5 mg/L",
+            "status": "resulted",
+            "date": "2025-02-15"
+          },
+          {
+            "name": "ESR",
+            "value": "28 mm/hr",
+            "status": "resulted",
+            "date": "2025-02-15"
+          }
+        ]
+      },
+      "assessment": "RA stable on tofacitinib; biopsy-confirmed psoriasis; severe chronic fatigue impacting quality of life; wellness maintained.",
+      "plan": [
+        {
+          "category": "medication",
+          "text": "Continue Tofacitinib 5mg PO BID. Will reassess RA disease activity in 3-4 months. Counselled on importance of adherence"
+        },
+        {
+          "category": "medication",
+          "text": "For now, continue topical Desoximetasone 0.25% cream PRN. Pt prefers to avoid new systemic medications at this time given current RA stability. Will re-evaluate need for systemic therapy if psoriasis progresses or topical treatment becomes insufficient. Close monitoring"
+        },
+        {
+          "category": "plan",
+          "text": "*"
+        },
+        {
+          "category": "education",
+          "text": "Referred to comprehensive fatigue management program (including PT/OT, sleep hygiene education, psychological support as needed)"
+        },
+        {
+          "category": "plan",
+          "text": "*"
+        },
+        {
+          "category": "education",
+          "text": "Encouraged graded exercise program, healthy diet, and strict sleep schedule"
+        },
+        {
+          "category": "plan",
+          "text": "*"
+        },
+        {
+          "category": "investigation",
+          "text": "Consider checking thyroid function and Vitamin D at next routine blood draw if not already done recently"
+        },
+        {
+          "category": "plan",
+          "text": "*"
+        },
+        {
+          "category": "follow_up",
+          "text": "Will follow up on this referral and patient's progress at next visit"
+        },
+        {
+          "category": "education",
+          "text": "*"
+        },
+        {
+          "category": "education",
+          "text": "Continue current medications for HTN, Dyslipidemia, GERD"
+        },
+        {
+          "category": "education",
+          "text": "*"
+        },
+        {
+          "category": "education",
+          "text": "Medication reconciliation flagged incomplete, to be completed by nurse or MA before next encounter"
+        },
+        {
+          "category": "education",
+          "text": "*"
+        },
+        {
+          "category": "education",
+          "text": "Annual flu shot recommended. Up-to-date on vaccinations per chart review"
+        },
+        {
+          "category": "education",
+          "text": "*"
+        },
+        {
+          "category": "education",
+          "text": "Patient advised to call if any worsening symptoms or new concerns"
+        },
+        {
+          "category": "follow_up",
+          "text": "Return to Rheumatology clinic in 3-4 months, or sooner if needed."
+        }
+      ],
+      "counseling_education": [
+        "Adherence to current DMARD therapy",
+        "Fatigue management strategies including sleep hygiene and graded activity"
+      ],
+      "disposition": {
+        "status": "clinic_followup",
+        "instructions": [
+          "Return to Rheumatology clinic in 3-4 months, or sooner if needed."
+        ]
+      },
+      "coding": {
+        "icd10": [
+          "M05.9",
+          "L40.0",
+          "R53.82",
+          "I10",
+          "E78.5",
+          "K21.9"
+        ]
+      },
+      "reconciliation": {
+        "medication_reconciliation_status": "partial",
+        "allergy_reconciliation_status": "complete",
+        "note_review_status": "final"
+      },
+      "note_status": "FINALIZED",
+      "signatures": [
+        {
+          "signed_by": "Dr. S. Patel",
+          "role": "Rheumatologist",
+          "timestamp": "2025-04-10T11:45 AM"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ehr-item-6",
+    "type": "ehr",
+    "x": 3650,
+    "y": 50,
+    "width": 550,
+    "height": 450,
+    "content": "EHR Data",
+    "color": "#e8f5e8",
+    "rotation": 0,
+    "obj_description": "Patient EHR record for Robert Taylor - Gastroenterology visit for digestive health assessment",
+    "ehrData": {
+      "encounter_id": "EHR-MC-001001-20250905-01Patient",
+      "source_system": "GP Office EHR",
+      "patient": {
+        "id": "PID-2025-0905-GP-A01DOB:",
+        "mrn": "MRN-MC-001001Date:",
+        "dob": "1980-10-15",
+        "sex": "Female",
+        "name": "Sarah Miller"
+      },
+      "encounter_metadata": {
+        "date": "2025-09-05",
+        "type": "Outpatient",
+        "clinician": "Dr. Eleanor Vance, General Practitioner",
+        "specialty": "General Practice",
+        "visit_reason": "Annual Physical Exam. Routine Health Maintenance."
+      },
+      "subjective": {
+        "chief_complaint": "Annual Physical Exam. Routine Health Maintenance.",
+        "history_of_present_illness": "Patient is a 45 y/o female presenting for her scheduled annual physical and general health screening. She reports feeling mostly well since her last visit approximately a year ago. She denies any new significant complaints, fever, chills, cough, shortness of breath, chest pain, or GI upset.\nCopied from prior note (2024-08-28): Patient presented for routine follow-up. Reports ongoing management of Rheumatoid Arthritis with current medication regimen, feeling generally stable. No acute exacerbations at this time. Denies any new acute issues or concerns.She states her RA symptoms are stable on her current medication regimen, with no significant flares recently. She manages daily activities without major limitations. Discussed general well-being. No specific acute concerns today, just the usual check-up.",
+        "ros": {
+          "constitutional": "Denies fever, chills, night sweats, significant weight change. Generally feels well.",
+          "heent": "Denies blurred vision, diplopia, hearing loss, tinnitus, sore throat, sinus congestion.",
+          "cardiovascular": "Denies chest pain, palpitations, orthopnea, PND.",
+          "respiratory": "Denies cough, wheezing, dyspnea.",
+          "gastrointestinal": "Denies nausea, vomiting, diarrhea, constipation, abdominal pain. Regular bowel movements.",
+          "genitourinary": "Denies dysuria, hematuria, frequency.",
+          "musculoskeletal": "RA symptoms stable. Denies new joint pain/swelling or back pain. No new morning stiffness.",
+          "neurological": "Denies headaches, dizziness, syncope, numbness, tingling.",
+          "skin": "Denies rashes, lesions.",
+          "endocrine": "Denies heat/cold intolerance, polyuria, polydipsia.",
+          "hematologic/lymphatic": "Denies easy bruising, bleeding, lymphadenopathy.",
+          "psychiatric": "Denies depression, anxiety, insomnia."
+        }
+      },
+      "history": {
+        "pmh": [
+          "Rheumatoid Arthritis (diagnosed 2018) - currently managed with Methotrexate and a biologic agent (adalimumab).",
+          "Hypertension (mild, diagnosed 2021) - controlled with diet and exercise, previously on lisinopril but discontinued 6 months ago as BP normalized.",
+          "History of seasonal allergies.",
+          "Previous surgical hx: Appendectomy (childhood), Cholecystectomy (2015).",
+          "Imported from old system: HX OF RECURRENT UTIS. Not currently active."
+        ],
+        "medications": [
+          {
+            "name": "Methotrexate 15mg weekly (for RA)",
+            "status": "current"
+          },
+          {
+            "name": "Adalimumab 40mg every 2 weeks (for RA)",
+            "status": "current"
+          },
+          {
+            "name": "Folic Acid 1mg daily",
+            "status": "current"
+          },
+          {
+            "name": "Vitamin D 2000 IU daily",
+            "status": "current"
+          },
+          {
+            "name": "Occasional Ibuprofen PRN for minor aches, though rarely needed per patient.",
+            "status": "current"
+          },
+          {
+            "name": "Note from prior visit: Lisinopril 10mg daily. (Patient denies currently taking this per self-report, states BP well-controlled naturally now.)",
+            "status": "current"
+          }
+        ],
+        "allergies": [
+          {
+            "substance": "Penicillin",
+            "reaction": "rash"
+          },
+          {
+            "substance": "Sulfa",
+            "reaction": "hives"
+          }
+        ],
+        "social_history": {
+          "summary": "Non-smoker. Occasional alcohol use (1-2 glasses wine/week). Denies illicit drug use. Works as a retired teacher, volunteers part-time. Lives with spouse.\nCopied forward: Exercises moderately 3x/week. Diet is generally healthy, trying to incorporate more vegetables."
+        },
+        "family_history": [
+          "Mother: HTN, Type 2 DM, Died age 82 (MI)\nFather: HTN, Hyperlipidemia, Died age 78 (Stroke)\nSister: Healthy, age 58\nBrother: HTN, age 60\nNote: Strong family history of cardiovascular disease and metabolic syndrome."
+        ]
+      },
+      "objective": {
+        "vitals": {
+          "bp": "128/82",
+          "hr": "72",
+          "rr": "16",
+          "temp_f": "98.6",
+          "bmi": "27"
+        },
+        "physical_exam": {
+          "general": "Alert and oriented x3, well-developed, well-nourished female in no acute distress. Appears comfortable.",
+          "heent": "Denies blurred vision, diplopia, hearing loss, tinnitus, sore throat, sinus congestion.",
+          "cardiovascular": "Denies chest pain, palpitations, orthopnea, PND.",
+          "respiratory": "Denies cough, wheezing, dyspnea.",
+          "abdomen": "Soft, non-tender, non-distended. Bowel sounds present in all quadrants. No organomegaly or masses.",
+          "musculoskeletal": "RA symptoms stable. Denies new joint pain/swelling or back pain. No new morning stiffness.",
+          "skin": "Denies rashes, lesions.",
+          "neurological": "Denies headaches, dizziness, syncope, numbness, tingling."
+        }
+      },
+      "diagnoses": [
+        {
+          "label": "Routine Annual Physical Exam",
+          "certainty": "stable"
+        },
+        {
+          "label": "Rheumatoid Arthritis",
+          "coding_system": "ICD-10",
+          "code": "M05.9",
+          "certainty": "stable"
+        },
+        {
+          "label": "Hypertension",
+          "coding_system": "ICD-10",
+          "code": "I10",
+          "certainty": "stable"
+        },
+        {
+          "label": "Hyperlipidemia",
+          "coding_system": "ICD-10",
+          "code": "E78.5",
+          "certainty": "stable"
+        }
+      ],
+      "orders": {
+        "labs": [
+          {
+            "name": "Glucose",
+            "value": "98 mg/dL",
+            "status": "resulted",
+            "date": "2025-09-05"
+          },
+          {
+            "name": "Cholesterol Total",
+            "value": "190 mg/dL",
+            "status": "resulted",
+            "date": "2025-09-05"
+          },
+          {
+            "name": "HDL",
+            "value": "55 mg/dL",
+            "status": "resulted",
+            "date": "2025-09-05"
+          },
+          {
+            "name": "LDL",
+            "value": "110 mg/dL",
+            "status": "resulted",
+            "date": "2025-09-05"
+          },
+          {
+            "name": "LDL (prior year)",
+            "value": "125. mg/dL",
+            "status": "historical"
+          }
+        ]
+      },
+      "assessment": "Annual physical—stable overall; RA controlled; mild cardiovascular risk counseling and routine screening discussed.",
+      "plan": [
+        {
+          "category": "plan",
+          "text": "55 y/o female presenting for annual physical examination."
+        },
+        {
+          "category": "plan",
+          "text": "Routine Annual Physical Exam: Patient is generally well and stable."
+        },
+        {
+          "category": "plan",
+          "text": "No acute concerns."
+        },
+        {
+          "category": "plan",
+          "text": "Vitals within acceptable range, BMI slightly elevated but stable."
+        },
+        {
+          "category": "medication",
+          "text": "RA symptoms well-controlled on current regimen."
+        },
+        {
+          "category": "investigation",
+          "text": "Labs reviewed: Glucose WNL."
+        },
+        {
+          "category": "investigation",
+          "text": "Lipid panel showed borderline elevated LDL (110 mg/dL) but improved from prior year."
+        },
+        {
+          "category": "medication",
+          "text": "Continue lifestyle modifications."
+        },
+        {
+          "category": "medication",
+          "text": "Rheumatoid Arthritis: Stable on Methotrexate and Adalimumab."
+        },
+        {
+          "category": "medication",
+          "text": "Continue current regimen."
+        },
+        {
+          "category": "follow_up",
+          "text": "Follow-up with rheumatology as scheduled."
+        },
+        {
+          "category": "plan",
+          "text": "Hypertension (mild): BP 128/82 today."
+        },
+        {
+          "category": "plan",
+          "text": "Patient remains off lisinopril, which is appropriate given current readings."
+        },
+        {
+          "category": "medication",
+          "text": "Encourage continued diet and exercise."
+        },
+        {
+          "category": "investigation",
+          "text": "Recheck BP at next visit."
+        },
+        {
+          "category": "investigation",
+          "text": "Hyperlipidemia: Borderline high LDL."
+        },
+        {
+          "category": "education",
+          "text": "Discussed dietary modifications (reducing saturated/trans fats, increasing fiber) and regular exercise."
+        },
+        {
+          "category": "investigation",
+          "text": "Will recheck lipids at next annual exam."
+        },
+        {
+          "category": "investigation",
+          "text": "Health Maintenance/Screenings:"
+        },
+        {
+          "category": "education",
+          "text": "Vaccinations: Confirmed up-to-date on Tdap, Flu (will get this fall), and Zoster (received 2 years ago)."
+        },
+        {
+          "category": "education",
+          "text": "Discussed pneumonia vaccine due to age/RA."
+        },
+        {
+          "category": "plan",
+          "text": "Patient will consider."
+        },
+        {
+          "category": "investigation",
+          "text": "Cancer Screenings: Patient confirms up-to-date on mammogram (most recent 6 mos ago, negative), and colonoscopy (last one 3 years ago, clear, next due in 7 years)."
+        },
+        {
+          "category": "plan",
+          "text": "PAP smear current."
+        },
+        {
+          "category": "investigation",
+          "text": "Diabetes Screening: Glucose WNL today."
+        },
+        {
+          "category": "investigation",
+          "text": "Given family history, discussed importance of annual screening."
+        },
+        {
+          "category": "investigation",
+          "text": "Bone Density: Discussed need for DEXA scan in the next 1-2 years given age and RA history."
+        },
+        {
+          "category": "education",
+          "text": "Lifestyle Counseling: Reviewed importance of balanced diet, regular physical activity (targeting 150 mins moderate intensity/week), maintaining healthy weight, and stress management."
+        },
+        {
+          "category": "plan",
+          "text": "Patient verbalized understanding and commitment."
+        },
+        {
+          "category": "follow_up",
+          "text": "Follow-up: Return for next annual physical in one year, or sooner if new concerns arise."
+        },
+        {
+          "category": "plan",
+          "text": "Provided summary of visit."
+        },
+        {
+          "category": "plan",
+          "text": "Med rec complete (mostly)."
+        }
+      ],
+      "counseling_education": [
+        "Lifestyle: diet, exercise 150 min/week, weight management",
+        "Vaccine schedule and age-appropriate screenings reviewed"
+      ],
+      "disposition": {
+        "status": "clinic_followup",
+        "instructions": [
+          "Return in 1 year or sooner if concerns"
+        ]
+      },
+      "coding": {
+        "icd10": [
+          "Z00.00",
+          "M05.9",
+          "I10",
+          "E78.5"
+        ]
+      },
+      "reconciliation": {
+        "medication_reconciliation_status": "pending",
+        "allergy_reconciliation_status": "complete",
+        "note_review_status": "final"
+      },
+      "note_status": "FINALIZED"
+    }
+  },
+  {
+    "id": "ehr-item-7",
+    "type": "ehr",
+    "x": 4250,
+    "y": 50,
+    "width": 550,
+    "height": 450,
+    "content": "EHR Data",
+    "color": "#e8f5e8",
+    "rotation": 0,
+    "obj_description": "Patient EHR record for Maria Garcia - Pulmonology visit for respiratory condition evaluation",
+    "ehrData": {
+      "encounter_id": "EHR-MC-001001-20260218-01Date",
+      "source_system": "Emergency Department EHR",
+      "patient": {
+        "id": "PID-MC-001001DOB:",
+        "mrn": "MRN-EHR-2026-58743Patient",
+        "age": 57,
+        "dob": "1980-10-15",
+        "sex": "Female",
+        "name": "Sarah Miller"
+      },
+      "encounter_metadata": {
+        "date": "2026-02-18",
+        "time": "10:15 AM",
+        "time_out": "12:47 PMA",
+        "type": "Emergency",
+        "clinician": "Dr. A. Smith, EMNervecentre ID: NC-MC-001001-20260218-NEWS2-1030",
+        "specialty": "Emergency Medicine",
+        "visit_reason": "Right wrist pain after fall",
+        "external_ids": {
+          "nervecentre": "NC-MC-001001-20260218-NEWS2-1030"
+        }
+      },
+      "subjective": {
+        "chief_complaint": "Right wrist pain after fall",
+        "history_of_present_illness": "Patient is a 57-year-old female presenting to the ED this morning after a mechanical fall at home. She states she was walking in the kitchen, not really paying attention, and \"just tripped\" over nothing in particular. Landed on her outstretched right hand. Reports immediate 6/10 pain in the right wrist. Patient denies hitting her head, no LOC, no vision changes, no other injuries reported other than the wrist. Denies numbness or tingling. She has a known history of rheumatoid arthritis (RA) which she manages with prescribed medication. Pain has been constant since the fall. Took two ibuprofen 200mg at home with minimal relief. States wrist feels \"a bit swollen.\" Denies fever, chills. Last tetanus updated 3 years ago per old charting import. Patient reliable historian, per family. News2 score was 0 on arrival, patient stable.",
+        "ros": {
+          "general": "Denies fevers, chills, significant weight changes. Mild fatigue noted due to RA.",
+          "heent": "Denies headache, vision changes, sore throat, nasal congestion.",
+          "cardiovascular": "Denies chest pain, palpitations, orthopnea.",
+          "respiratory": "Denies cough, SOB, wheezing.",
+          "gastrointestinal": "Denies nausea, vomiting, diarrhea, constipation, abdominal pain.",
+          "genitourinary": "Denies dysuria, hematuria, frequency.",
+          "musculoskeletal": "Right wrist pain as described above. Mild swelling. Denies other joint pain. No back pain.",
+          "neurological": "Denies dizziness, syncope, numbness, tingling, weakness. No focal deficits.",
+          "skin": "Denies rashes, lesions."
+        }
+      },
+      "history": {
+        "pmh": [
+          "Hypertension (on lisinopril, refills pending review)",
+          "Rheumatoid Arthritis (diagnosed 2010)",
+          "Type 2 Diabetes Mellitus (well-controlled, a1c 6.8 last known, needs updated)",
+          "Hyperlipidemia",
+          "GERD",
+          "Previous wrist injury, left side, resolved.",
+          "Asthma (childhood, rarely uses inhaler)",
+          "[PAST HX IMPORT FROM EPIC 2023-01-15]",
+          "HTN",
+          "DM2",
+          "HLD",
+          "Anxiety - prn use of alprazolam.",
+          "RA – Humira and Methotrexate (check adherence)"
+        ],
+        "psh": [
+          "Cholecystectomy (2005)",
+          "Appendectomy (childhood)",
+          "Left Knee Arthroscopy (2018)"
+        ],
+        "medications": [
+          {
+            "name": "Lisinopril 10mg PO QD",
+            "status": "current"
+          },
+          {
+            "name": "Metformin 500mg PO BID",
+            "status": "current"
+          },
+          {
+            "name": "Atorvastatin 20mg PO QD",
+            "status": "current"
+          },
+          {
+            "name": "Omeprazole 20mg PO QD",
+            "status": "current"
+          },
+          {
+            "name": "Humira 40mg SC every other week (last dose unclear)",
+            "status": "current"
+          },
+          {
+            "name": "Methotrexate 10mg PO weekly (patient states she sometimes forgets this one)",
+            "status": "current"
+          },
+          {
+            "name": "Ibuprofen PRN pain (patient denies using regularly but took 2 this morning)",
+            "status": "current"
+          },
+          {
+            "name": "Alprazolam 0.25mg PRN anxiety (patient states she hardly ever takes this)MEDICATION RECONCILIATION PENDING – TO BE COMPLETED BY PHARMACIST",
+            "status": "unknown"
+          }
+        ],
+        "allergies": [
+          {
+            "substance": "Penicillin",
+            "reaction": "rash"
+          },
+          {
+            "substance": "SULFA",
+            "reaction": "hives"
+          },
+          {
+            "substance": "Codeine",
+            "reaction": "nausea"
+          }
+        ],
+        "social_history": {
+          "summary": "Lives at home with spouse.; Former smoker, quit 10 years ago. (15 pack-year hx); Occasional alcohol use (1-2 drinks/week).; No illicit drug use.; Retired librarian.; Home environment: Single-story home, no stairs. Rugs noted, potentially trip hazards."
+        },
+        "family_history": [
+          "Mother: HTN, DM2",
+          "Father: CAD, deceased 60s",
+          "Sister: RA, hypothyroid"
+        ]
+      },
+      "objective": {
+        "vitals": {
+          "bp": "132/82",
+          "hr": "78",
+          "rr": "16",
+          "temp_f": "98.4",
+          "spo2_pct": "99",
+          "pain": "4/10"
+        },
+        "physical_exam": {
+          "general": "Denies fevers, chills, significant weight changes. Mild fatigue noted due to RA.",
+          "heent": "Denies headache, vision changes, sore throat, nasal congestion.",
+          "neck": "Supple, no lymphadenopathy.",
+          "cardiovascular": "Denies chest pain, palpitations, orthopnea.",
+          "respiratory": "Denies cough, SOB, wheezing.",
+          "abdomen": "Soft, non-tender, non-distended. BS present.",
+          "extremities": "Right wrist: Mild swelling over dorsal aspect. No obvious deformity or ecchymosis. Tenderness to palpation dorsally and radially. ROM mildly restricted due to pain. Full sensation to light touch. Capillary refill <2 seconds. Radial pulse 2+. No gross deformity. Left wrist normal. No other musculoskeletal tenderness or swelling.",
+          "neurological": "Denies dizziness, syncope, numbness, tingling, weakness. No focal deficits."
+        }
+      },
+      "diagnoses": [
+        {
+          "label": "Right wrist sprain/contusion, post-mechanical fall",
+          "coding_system": "ICD-10",
+          "code": "S63.501A",
+          "certainty": "working"
+        },
+        {
+          "label": "Fall, initial encounter",
+          "coding_system": "ICD-10",
+          "code": "W19.XXXA",
+          "certainty": "confirmed"
+        }
+      ],
+      "orders": {
+        "imaging": [
+          {
+            "modality": "X-ray",
+            "body_part": "Right Wrist",
+            "status": "performed",
+            "result_summary": "No acute fracture or dislocation identified. Mild soft tissue swelling noted. Degenerative changes consistent with age and known RA."
+          }
+        ]
+      },
+      "assessment": "57-year-old female presenting to ED after mechanical fall resulting in right wrist pain. History of RA.",
+      "plan": [
+        {
+          "category": "plan",
+          "text": "98.4 F (oral)"
+        },
+        {
+          "category": "plan",
+          "text": "HR: 78 bpm (regular)"
+        },
+        {
+          "category": "plan",
+          "text": "BP: 132/82 mmHg (left arm, sitting)"
+        },
+        {
+          "category": "plan",
+          "text": "RR: 16 bpm"
+        },
+        {
+          "category": "medication",
+          "text": "SpO2: 99% RA"
+        },
+        {
+          "category": "plan",
+          "text": "Pain: 4/10 (right wrist)"
+        },
+        {
+          "category": "plan",
+          "text": "General: Alert and oriented x 3, no acute distress."
+        },
+        {
+          "category": "plan",
+          "text": "HEENT: Normocephalic, atraumatic. PERRLA. Oropharynx clear."
+        },
+        {
+          "category": "plan",
+          "text": "Neck: Supple, no lymphadenopathy."
+        },
+        {
+          "category": "plan",
+          "text": "Cardiovascular: RRR, no murmurs, rubs, gallops. Pulses 2+ and symmetric."
+        },
+        {
+          "category": "plan",
+          "text": "Respiratory: CTA bilaterally, no wheezes, rales, or rhonchi."
+        },
+        {
+          "category": "plan",
+          "text": "Abdomen: Soft, non-tender, non-distended. BS present."
+        },
+        {
+          "category": "education",
+          "text": "Extremities: Right wrist: Mild swelling over dorsal aspect. No obvious deformity or ecchymosis. Tenderness to palpation dorsally and radially. ROM mildly restricted due to pain. Full sensation to light touch. Capillary refill <2 seconds. Radial pulse 2+. No gross deformity. Left wrist normal. No other musculoskeletal tenderness or swelling."
+        },
+        {
+          "category": "plan",
+          "text": "Neurological: GCS 15. Grossly intact strength and sensation. Coordination normal."
+        },
+        {
+          "category": "plan",
+          "text": "LABORATORY / IMAGING:"
+        },
+        {
+          "category": "plan",
+          "text": "Labs: No labs indicated or drawn during this ED visit. (Per protocol, fall patient with no LOC and negative head exam no immediate labs needed for routine fall)"
+        },
+        {
+          "category": "plan",
+          "text": "Imaging:"
+        },
+        {
+          "category": "plan",
+          "text": "X-ray Right Wrist (3 views): IMPRESSION: No acute fracture or dislocation identified. Mild soft tissue swelling noted. Degenerative changes consistent with age and known RA."
+        },
+        {
+          "category": "medication",
+          "text": "Radiology report reviewed and concurred."
+        },
+        {
+          "category": "plan",
+          "text": "ASSESSMENT & PLAN:A: 57-year-old female presenting to ED after mechanical fall resulting in right wrist pain. History of RA."
+        },
+        {
+          "category": "medication",
+          "text": "Right Wrist Pain, post-fall: Suspected sprain/contusion. X-ray negative for fracture. Clinically, mild swelling but no deformity, neurovascular intact. Given her RA, her baseline joint health is compromised, which may make her more prone to injury and slower healing."
+        },
+        {
+          "category": "medication",
+          "text": "Continue ibuprofen 400-600mg PO PRN for pain, max 3x daily."
+        },
+        {
+          "category": "education",
+          "text": "RICE therapy: Rest, Ice (20 min on/off), Compression (elastic bandage), Elevation."
+        },
+        {
+          "category": "restriction",
+          "text": "Avoid strenuous activity with right wrist for 7-10 days."
+        },
+        {
+          "category": "safety_net",
+          "text": "If pain worsens or new symptoms develop, return to ED."
+        },
+        {
+          "category": "follow_up",
+          "text": "Consider follow up with PCP in 1 week if no significant improvement or for re-evaluation. Or Ortho if persistent pain (PCP can refer)."
+        },
+        {
+          "category": "medication",
+          "text": "Fall Risk: Discussed environmental safety. Advised patient to remove throw rugs, ensure adequate lighting, and use handrails. Encouraged reviewing medications with PCP for any potential fall-inducing side effects, although no specific meds highlighted today."
+        },
+        {
+          "category": "follow_up",
+          "text": "Referral to PT/OT for home safety evaluation? Discuss with PCP."
+        },
+        {
+          "category": "plan",
+          "text": "P:"
+        },
+        {
+          "category": "plan",
+          "text": "Discharge home today."
+        },
+        {
+          "category": "medication",
+          "text": "Instructions provided on RICE therapy, pain management with ibuprofen."
+        },
+        {
+          "category": "safety_net",
+          "text": "Safety netting instructions provided."
+        },
+        {
+          "category": "follow_up",
+          "text": "Follow up with PCP as needed, consider if pain persists beyond 1 week."
+        },
+        {
+          "category": "plan",
+          "text": "Patient verbalizes understanding of discharge instructions."
+        },
+        {
+          "category": "plan",
+          "text": "No further imaging or labs indicated at this time."
+        }
+      ],
+      "counseling_education": [
+        "RICE therapy instructions reviewed",
+        "Fall risk and home safety counseling (remove throw rugs, improve lighting, handrails)"
+      ],
+      "disposition": {
+        "status": "discharged",
+        "instructions": [
+          "Use ibuprofen 400–600 mg PO up to 3x/day as needed",
+          "Return to ED if pain worsens or new symptoms",
+          "Follow up with PCP within 1 week; consider Ortho if persistent pain"
+        ],
+        "condition_at_discharge": "Stable"
+      },
+      "coding": {
+        "icd10": [
+          "S63.501A",
+          "W19.XXXA"
+        ]
+      },
+      "reconciliation": {
+        "medication_reconciliation_status": "pending_pharmacist",
+        "allergy_reconciliation_status": "complete",
+        "note_review_status": "final"
+      },
+      "note_status": "FINALIZED",
+      "signatures": [
+        {
+          "signed_by": "Dr. A. Smith, EMNervecentre ID: NC-MC-001001-20260218-NEWS2-1030",
+          "role": "Emergency Medicine Attending",
+          "timestamp": "2026-02-18T12:45:00"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ehr-item-8",
+    "type": "ehr",
+    "x": 4850,
+    "y": 50,
+    "width": 550,
+    "height": 450,
+    "content": "EHR Data",
+    "color": "#e8f5e8",
+    "rotation": 0,
+    "obj_description": "Patient EHR record for James Wilson - Urology visit for kidney function assessment and treatment",
+    "ehrData": {
+      "encounter_id": "EHR-MC-001001-20260320-01Encounter",
+      "source_system": "Rheumatology Clinic EHR",
+      "patient": {
+        "mrn": "MC-2025-011234DOB:",
+        "dob": "1980-10-15",
+        "sex": "Female",
+        "name": "Sarah Miller"
+      },
+      "encounter_metadata": {
+        "date": "03/20/2026",
+        "type": "Outpatient",
+        "clinician": "Dr. Alex Chen, Rheumatology",
+        "specialty": "Rheumatology",
+        "visit_reason": "Follow-up for RA, fatigue, and recent fall."
+      },
+      "subjective": {
+        "chief_complaint": "Follow-up for RA, fatigue, and recent fall.",
+        "history_of_present_illness": "Patient is a 57 y/o female, well-established to this clinic for chronic rheumatoid arthritis. Here today for f/u regarding ongoing RA management, persistent fatigue, and recent fall.\nPt presents today following an ED visit on 03/10/2026 after a fall at home. Patient reports she tripped over a rug in her living room, falling onto her right side, primarily impacting her wrist. Initial ED documentation, reviewed via chart import, indicated significant right wrist pain. However, patient states now the pain has \"completely resolved\" and she denies any residual discomfort, swelling, or limited ROM in the affected wrist. X-rays performed in the ED were negative for fracture. Pt is relieved about the wrist, but admits still feels a bit unsteady on her feet at times, particularly when tired.\nThe persistent, significant fatigue is the other primary concern. She reports this has been an ongoing issue for several months, possibly worsening over the last 2-3 months. Denies fevers, chills, weight loss, or changes in sleep patterns (though sometimes wakes up tired). States she feels \"just utterly drained, like I've run a marathon, even after doing nothing.\" This impacts her daily function significantly, making routine tasks difficult. RA symptoms (joint pain, swelling) are otherwise generally stable with her current medication regimen, with only mild morning stiffness in hands (approx 30 mins) and occasional intermittent swelling in her 2nd and 3rd MCP joints bilaterally, not severe. Denies any new skin rashes, ocular symptoms, or oral ulcers.",
+        "ros": {
+          "general": "+Fatigue (significant). Denies fever, chills, night sweats, recent weight change.",
+          "musculoskeletal": "+Morning stiffness hands (30 min). Occasional bilateral MCP tenderness. Right wrist pain resolved. Denies new significant joint swelling/warmth/erythema. Denies new back pain.",
+          "neurological": "Denies headache, numbness, tingling. Reports occasional dizziness with quick position changes.",
+          "cardiovascular": "Denies chest pain, palpitations, edema.",
+          "pulmonary": "Denies cough, SOB.",
+          "gi": "Denies nausea, vomiting, diarrhea, constipation.",
+          "gu": "Denies dysuria, frequency, incontinence.",
+          "skin": "Denies rashes, lesions, pruritus.",
+          "psych": "Denies depression, anxiety, sleep disturbance (though reports waking tired)."
+        }
+      },
+      "history": {
+        "pmh": [
+          "Rheumatoid Arthritis (diagnosed 2015, seropositive)",
+          "Hypertension, essential",
+          "Hyperlipidemia, mixed",
+          "Osteoporosis, mild",
+          "Bilateral Carpal Tunnel Syndrome (s/p surgical release 2018)",
+          "Anemia of Chronic Disease (stable)"
+        ],
+        "medications": [
+          {
+            "name": "Methotrexate 15 mg PO weekly (taken Monday)",
+            "status": "current"
+          },
+          {
+            "name": "Folic Acid 1 mg PO daily (taken Tuesday-Sunday)",
+            "status": "current"
+          },
+          {
+            "name": "Hydroxychloroquine 200 mg PO BID (Patient is sometimes inconsistent with BID dosing, sometimes only once daily)",
+            "status": "current"
+          },
+          {
+            "name": "Lisinopril 10 mg PO daily",
+            "status": "current"
+          },
+          {
+            "name": "Atorvastatin 20 mg PO daily",
+            "status": "current"
+          },
+          {
+            "name": "Calcium 600 mg + Vitamin D 400 IU PO BID",
+            "status": "current"
+          },
+          {
+            "name": "Prednisone 5 mg PO daily (Patient says she uses this \"as needed for bad days,\" not currently taking daily but was listed as daily on prior med recon from ED visit.)",
+            "status": "as_needed"
+          },
+          {
+            "name": "Ibuprofen 400 mg PO PRN for pain (patient states she tries to avoid this now)",
+            "status": "as_needed"
+          }
+        ],
+        "allergies": [
+          {
+            "substance": "Penicillin",
+            "reaction": "Rash, Hives (Pt also reports 'no known drug allergies' for new patient forms. Need to clarify.)Latex - contact dermatitis"
+          }
+        ],
+        "social_history": {
+          "summary": "Lives at home with husband. Retired from teaching middle school. Denies tobacco. Occasional ETOH use (1-2 drinks/week). No illicit drug use. Reports limited physical activity due to fatigue. Home safety assessment recommended."
+        },
+        "family_history": [
+          "Mother with RA and osteoporosis. Father with CAD. No other significant autoimmune conditions."
+        ]
+      },
+      "objective": {
+        "vitals": {
+          "bp": "128/78",
+          "hr": "72",
+          "rr": "16",
+          "temp_f": "98.1",
+          "spo2_pct": "99",
+          "weight_lbs": "155",
+          "bmi": "26.1"
+        },
+        "physical_exam": {
+          "general": "+Fatigue (significant). Denies fever, chills, night sweats, recent weight change.",
+          "skin": "Denies rashes, lesions, pruritus.",
+          "right_wrist": "Non-tender to palpation over joint line or distal radius/ulna. Full range of motion (flexion, extension, pronation, supination, ulnar/radial deviation) bilaterally. No swelling, erythema, or deformity. Intact neurovascular. Old surgical scar noted.",
+          "hands": "Mild tenderness and subtle boggy feeling over 2nd and 3rd MCP joints bilaterally. No overt warmth/erythema. Good grip strength. Flexion deformities absent.",
+          "other_joints": "Hips, knees, ankles supple, no effusions."
+        }
+      },
+      "diagnoses": [
+        {
+          "label": "Rheumatoid Arthritis, seropositive, chronic, well-controlled (mostly)",
+          "coding_system": "ICD-10",
+          "code": "M05.9",
+          "certainty": "stable"
+        },
+        {
+          "label": "Recent Fall, with resolved right wrist pain, status post negative X-rays",
+          "coding_system": "ICD-10",
+          "code": "W19.XXXA",
+          "certainty": "working"
+        },
+        {
+          "label": "Fatigue, chronic and significant (likely multifactorial, RA-related)",
+          "coding_system": "ICD-10",
+          "code": "R53.82",
+          "certainty": "working"
+        }
+      ],
+      "orders": {
+        "labs": [
+          {
+            "name": "ESR",
+            "value": "38 mm/hr",
+            "status": "historical"
+          },
+          {
+            "name": "CRP",
+            "value": "8.2 mg/L",
+            "status": "historical"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "12.8. g/dL",
+            "status": "historical"
+          }
+        ]
+      },
+      "assessment": "RA well-controlled; wrist pain resolved post-fall; significant chronic fatigue—multifactorial.",
+      "plan": [
+        {
+          "category": "plan",
+          "text": "Rheumatoid Arthritis, seropositive, chronic, well-controlled (mostly):"
+        },
+        {
+          "category": "medication",
+          "text": "Patient continues to manage RA on current DMARDS. No acute flare activity today. Continue Methotrexate, Folic Acid, Hydroxychloroquine. Reinforce adherence to BID HCQ regimen."
+        },
+        {
+          "category": "plan",
+          "text": "Fatigue is a significant component of her disease and affecting QOL."
+        },
+        {
+          "category": "referral",
+          "text": "Will refer for an Occupational Therapy assessment. This will help with adaptive strategies for daily tasks, joint protection techniques, and specific fatigue management."
+        },
+        {
+          "category": "plan",
+          "text": "Recent Fall, with resolved right wrist pain, status post negative X-rays:"
+        },
+        {
+          "category": "referral",
+          "text": "Reviewed ED notes and X-rays confirming no fracture was present. Pt reports complete resolution of wrist pain, which is excellent."
+        },
+        {
+          "category": "referral",
+          "text": "Discussed the importance of maintaining joint stability with regular, gentle exercises (as guided by OT) and avoiding high-risk activities. Emphasized home safety assessment and minimizing tripping hazards."
+        },
+        {
+          "category": "plan",
+          "text": "Patient will monitor for any recurrence of pain or instability."
+        },
+        {
+          "category": "plan",
+          "text": "Fatigue, chronic and significant (likely multifactorial, RA-related):"
+        },
+        {
+          "category": "plan",
+          "text": "This remains a primary complaint. It is impacting her daily functioning."
+        },
+        {
+          "category": "referral",
+          "text": "Plan: Referral to OT as above for adaptive strategies + fatigue management."
+        },
+        {
+          "category": "referral",
+          "text": "Will consider further workup for other causes if OT does not yield improvement, including repeat thyroid function, Vitamin D."
+        },
+        {
+          "category": "plan",
+          "text": "Discussed regular, mild physical activity as tolerated."
+        },
+        {
+          "category": "plan",
+          "text": "medication reconciliation incomplete, will follow up."
+        },
+        {
+          "category": "follow_up",
+          "text": "Return to clinic in 3 months for routine RA follow-up or sooner if any acute concerns or worsening fatigue."
+        }
+      ],
+      "counseling_education": [
+        "OT referral and fatigue management strategies discussed",
+        "Fall prevention and home safety reviewed"
+      ],
+      "disposition": {
+        "status": "clinic_followup",
+        "instructions": [
+          "Return to clinic in 3 months for routine RA follow-up or sooner if any acute concerns or worsening fatigue."
+        ]
+      },
+      "coding": {
+        "icd10": [
+          "M05.9",
+          "R53.82",
+          "W19.XXXA"
+        ]
+      },
+      "reconciliation": {
+        "medication_reconciliation_status": "incomplete",
+        "allergy_reconciliation_status": "needs_clarification",
+        "note_review_status": "final_pending_cosign"
+      },
+      "note_status": "FINAL - PENDING CO-SIGNATURE FROM TRAINEE (IF APPLICABLE)",
+      "signatures": [
+        {
+          "signed_by": "Dr. Alex Chen, MD",
+          "role": "Rheumatologist",
+          "timestamp": "2026-03-20T15:10:00-05:00"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ehr-item-9",
+    "type": "ehr",
+    "x": 5450,
+    "y": 50,
+    "width": 550,
+    "height": 450,
+    "content": "EHR Data",
+    "color": "#e8f5e8",
+    "rotation": 0,
+    "obj_description": "Patient EHR record for Jennifer Lee - Psychiatry visit for mental health assessment and therapy planning",
+    "ehrData": {
+      "encounter_id": "EHR-MC-001001-20260710-01Date of Service: 2026-07-10Patient ID: PID-MC-001001DOB: 03/12/1975Provider: Dr. Elara Vance, RheumatologyClinic: MetroCity Advanced Rheumatology",
+      "source_system": "MetroCity Advanced Rheumatology EHR",
+      "patient": {
+        "id": "PID-MC-001001DOB:",
+        "dob": "1980-10-15",
+        "sex": "Female",
+        "name": "Sarah Miller"
+      },
+      "encounter_metadata": {
+        "date": "2026-07-10",
+        "type": "Outpatient",
+        "clinician": "Dr. Elara Vance, RheumatologyClinic: MetroCity Advanced Rheumatology",
+        "specialty": "Rheumatology",
+        "clinic": "MetroCity Advanced Rheumatology",
+        "visit_reason": "Persistent debilitating fatigue; f/u re: pain management referral."
+      },
+      "subjective": {
+        "chief_complaint": "Persistent debilitating fatigue; f/u re: pain management referral.",
+        "history_of_present_illness": "Patient is a 45 y/o female, PID-MC-001001, seen today for follow-up of her chronic, persistent fatigue. Despite what appears to be overall good control of her underlying rheumatoid arthritis – she reports joint symptoms are significantly improved since her last visit in Q1, 2026, and she denies any significant new joint swelling or morning stiffness > 30 mins – her FATIGUE REMAINS HER PRIMARY, DEBILITATING COMPLAINT. She describes it as an overwhelming exhaustion that affects her daily activities, concentration, and overall quality of life. She states, \"I just can't shake it, even when my joints feel pretty good.\" She denies fevers, chills, unexplained weight loss or night sweats. No new rashes. She continues to struggle with sleep quality, stating she feels unrefreshed despite aiming for 7-8 hours.Review of external pain management clinic report today, dated 2026-06-28. This report, linked under Viper ID: VIPER-MC-001001-20260710-PAINCLIN, detailed recommendations for improved sleep hygiene practices and cognitive behavioral therapy (CBT) specifically targeting fatigue management. Patient acknowledged receipt of the report and states she's 'trying' some of the sleep hygiene suggestions but finds adherence difficult. She is hesitant about CBT at this time, citing lack of energy to attend sessions.",
+        "ros": {
+          "general": "Fatigue as above. Denies fever, chills, weight changes.",
+          "cv": "Denies chest pain, palpitations.",
+          "resp": "Denies cough, SOB.",
+          "gi": "No N/V/D/C. No abdominal pain.",
+          "msk": "Joints improved. Denies new swelling. No tenderness today.",
+          "neuro": "Denies headache (except occasional, managed w/ Ibuprofen). Denies numbness/tingling.",
+          "psych": "Denies active suicidal ideation. Mood stable. Sleep disturbance is significant."
+        }
+      },
+      "history": {
+        "pmh": [
+          "Rheumatoid Arthritis, seropositive, diagnosed 2018",
+          "Hypertension (controlled)",
+          "GERD",
+          "Prior anemia (resolved? Need to check prior labs, Hgb 12.0 in 2023 was borderline. Maybe not related)",
+          "Osteoarthritis (minor)",
+          "Anxiety (mild, intermittent)"
+        ],
+        "medications": [
+          {
+            "name": "Methotrexate 15mg weekly (oral) - continues",
+            "status": "current"
+          },
+          {
+            "name": "Hydroxychloroquine 200mg daily - continues",
+            "status": "current"
+          },
+          {
+            "name": "Folic Acid 1mg daily (24 hrs after MTX)",
+            "status": "current"
+          },
+          {
+            "name": "Lisinopril 10mg daily",
+            "status": "current"
+          },
+          {
+            "name": "Omeprazole 20mg daily",
+            "status": "current"
+          },
+          {
+            "name": "Occasional Ibuprofen 400mg PRN (pt denies taking frequently, \"maybe once a month for a headache\")",
+            "status": "as_needed"
+          },
+          {
+            "name": "Vitamin D 2000 IU daily (over-the-counter)",
+            "status": "current"
+          }
+        ],
+        "allergies": [
+          {
+            "substance": "Penicillin",
+            "reaction": "rash"
+          },
+          {
+            "substance": "Sulfa",
+            "reaction": "hives"
+          }
+        ],
+        "social_history": {
+          "summary": "Lives with husband. Retired schoolteacher. Denies tobacco use. Occasional EtOH (1-2 drinks/week). No illicit drug use."
+        },
+        "family_history": [
+          "Mother with RA, HTN. Father with CAD."
+        ],
+        "travel_history": "None recent. [CHECK LAST TRAVEL HISTORY ENTRY]"
+      },
+      "objective": {
+        "vitals": {
+          "bp": "130/80",
+          "hr": "72",
+          "rr": "16",
+          "temp_f": "97.9",
+          "spo2_pct": "98"
+        },
+        "physical_exam": {
+          "general": "Fatigue as above. Denies fever, chills, weight changes.",
+          "heent": "NC/AT. PERRLA. Oropharynx clear.",
+          "neck": "Supple. No lymphadenopathy. No thyromegaly.",
+          "lungs": "CTAB. No wheezes, rales, or rhonchi.",
+          "heart": "RRR. No murmurs, rubs, gallops.",
+          "abdomen": "Soft, non-tender, non-distended. BS present.",
+          "extremities": "No peripheral edema. No active synovitis or joint effusions palpated in hands, wrists, knees, or feet. Good ROM.",
+          "skin": "No rashes. No nodules."
+        }
+      },
+      "diagnoses": [
+        {
+          "label": "Persistent debilitating fatigue",
+          "coding_system": "ICD-10",
+          "code": "R53.82",
+          "certainty": "working"
+        },
+        {
+          "label": "Rheumatoid arthritis, seropositive",
+          "coding_system": "ICD-10",
+          "code": "M05.9",
+          "certainty": "stable"
+        },
+        {
+          "label": "Essential hypertension",
+          "coding_system": "ICD-10",
+          "code": "I10",
+          "certainty": "stable"
+        },
+        {
+          "label": "Gastroesophageal reflux disease",
+          "coding_system": "ICD-10",
+          "code": "K21.9",
+          "certainty": "stable"
+        }
+      ],
+      "orders": {
+        "labs": [
+          {
+            "name": "TSH",
+            "value": "2.1 mIU/L",
+            "status": "resulted",
+            "date": "2026-04-15"
+          },
+          {
+            "name": "Vitamin D, 25-OH",
+            "value": "35 ng/mL",
+            "status": "resulted",
+            "date": "2026-04-15"
+          },
+          {
+            "name": "ESR",
+            "value": "18 mm/hr",
+            "status": "resulted",
+            "date": "2026-04-15"
+          },
+          {
+            "name": "CRP",
+            "value": "5.2 mg/L",
+            "status": "resulted",
+            "date": "2026-04-15"
+          }
+        ]
+      },
+      "assessment": "Seropositive RA well-controlled; persistent multifactorial fatigue remains primary issue; evaluate sleep disorders and reinforce behavioral strategies.",
+      "plan": [
+        {
+          "category": "plan",
+          "text": "51 y/o female with seropositive RA, well-controlled from an inflammatory arthritis standpoint, presenting with persistent and debilitating fatigue. This has been a chronic complaint for the patient despite optimization of her RA treatment regimen."
+        },
+        {
+          "category": "plan",
+          "text": "Persistent Debilitating Fatigue, multifactorial:"
+        },
+        {
+          "category": "medication",
+          "text": "Patient reports significant fatigue impacting daily life. Reviewed the pain management clinic report from Viper ID: VIPER-MC-001001-20260710-PAINCLIN, which emphasized sleep hygiene and CBT for fatigue. Discussed these recommendations with the patient. Patient is attempting sleep hygiene but finds it challenging. Reiterated the importance of consistency with all prescribed medications including folic acid for MTX and adherence to non-pharmacological approaches."
+        },
+        {
+          "category": "investigation",
+          "text": "Discussed the need to rule out other contributing factors to her fatigue beyond RA or her current pain management recommendations. Prior TSH and Vitamin D levels were within normal limits, as per the 2026-04-15 labs."
+        },
+        {
+          "category": "investigation",
+          "text": "PLAN: Recommend follow-up with her primary care physician for consideration of a formal sleep study to rule out sleep apnea or other sleep disorders. Provided a referral letter template for her GP. Patient agrees to schedule this."
+        },
+        {
+          "category": "education",
+          "text": "Encouraged patient to reconsider CBT for fatigue management, perhaps looking into virtual options if attendance is a barrier."
+        },
+        {
+          "category": "medication",
+          "text": "Rheumatoid Arthritis: Appears well-controlled on current Methotrexate and Hydroxychloroquine regimen. No evidence of active synovitis today. Continue current medications. Follow up PRN sooner if new RA flare, otherwise in 3-4 months."
+        },
+        {
+          "category": "medication",
+          "text": "Blood Pressure: Continues on Lisinopril, BP well-controlled today."
+        },
+        {
+          "category": "medication",
+          "text": "GERD: Continues on Omeprazole, symptoms well-controlled."
+        }
+      ],
+      "counseling_education": [
+        "Reinforced sleep hygiene and medication adherence",
+        "Discussed CBT for fatigue and virtual access options"
+      ],
+      "disposition": {
+        "status": "clinic_followup",
+        "instructions": [
+          "Patient advised to follow up with GP for sleep study. Will return to rheumatology in 3-4 months for routine RA follow up."
+        ]
+      },
+      "coding": {
+        "icd10": [
+          "R53.82",
+          "M05.9",
+          "I10",
+          "K21.9"
+        ]
+      },
+      "reconciliation": {
+        "medication_reconciliation_status": "incomplete",
+        "allergy_reconciliation_status": "complete",
+        "note_review_status": "final",
+        "notes": [
+          "Reminder: Medication reconciliation incomplete for OTC Vitamin D. Need to verify dose with patient at next visit."
+        ]
+      },
+      "note_status": "FINALIZED, BILLING PENDING.REMINDER: MEDICATION RECONCILIATION INCOMPLETE FOR OTC VITAMIN D. NEED TO VERIFY DOSE WITH PATIENT AT NEXT VISIT.",
+      "signatures": [
+        {
+          "signed_by": "Dr. Elara VanceDate of Signature: 2026-07-10 16:45 ESTNote Status: Finalized, billing pending.Reminder: Medication reconciliation incomplete for OTC Vitamin D. Need to verify dose with patient at next visit.",
+          "role": "Rheumatologist",
+          "timestamp": "2026-07-10T16:45:00"
+        }
+      ],
+      "attachments": [
+        {
+          "type": "external_report",
+          "title": "Pain management clinic report",
+          "external_id": "VIPER-MC-001001-20260710-PAINCLIN"
+        }
+      ]
+    }
+  },
+  {
+    "id": "item-1759853783245-we4jxb",
+    "type": "agent",
+    "x": 400,
+    "y": 200,
+    "width": 520,
+    "height": 1571,
+    "content": "\n## Identifiers\n\n* **Name:** Sarah Miller\n* **Age:** 43\n* **DOB:** October 15, 1980\n* **Sex:** Female\n* **Marital Status:** Married\n* **Address:** 123 Maple Drive, Anytown, USA\n* **Occupation:** Senior accountant\n* **Primary Language:** English\n* **Phone:** (555) 123-4567\n\n## Lifestyle\n\n* **Activity:** Moderately active but constrained by condition\n* **Exercise:** Gentle stretching and short walks a few times a week\n* **Tobacco:** Non-smoker\n* **Alcohol:** Occasional (typically one glass of wine during social gatherings)\n* **Diet:** Generally balanced, whole foods; occasional comfort eating with increased pain or fatigue\n* **Sleep:** Frequently disrupted due to discomfort → chronic fatigue\n* **Limitations:** Persistent joint pain and stiffness, especially mornings\n\n## Medical History\n\n* **Primary condition:** Severe polyarticular rheumatoid arthritis (RA), diagnosed in early thirties\n* **Initial presentation:** Symmetrical pain and swelling in hands, wrists, and feet → later knees and shoulders\n* **Early treatments:**\n\n  * Hydroxychloroquine **200 mg daily**\n  * Sulfasalazine **500 mg twice daily**\n    *Outcome:* Moderate relief; did not fully control inflammation\n* **Past 5 years:** High disease activity with joint erosion and persistent synovitis → transitioned to **Tofacitinib (Xeljanz) 5 mg twice daily**\n  *Outcome:* Significant reduction in joint pain and swelling; **morning stiffness 1–2 hours** and **generalized fatigue** persist\n* **Dermatologic symptoms:** Intermittent red, scaly skin patches on elbows and knees → managed with **topical desoximetasone cream 0.25% once daily**\n* **Other major conditions:** None reported\n* **Current status:** Managed but daily challenges related to RA\n\n## Medications\n\n* **Current:**\n\n  * **Tofacitinib (Xeljanz) 5 mg twice daily**\n  * **Desoximetasone cream 0.25%** to skin lesions **once daily**\n  * **Ibuprofen 400 mg as needed** for breakthrough pain\n* **Past (discontinued for inadequate control):**\n\n  * **Hydroxychloroquine 200 mg daily**\n  * **Sulfasalazine 500 mg twice daily**\n\n## Allergies\n\n* **Penicillin:** Generalized rash\n* **Food allergies:** None known\n\n## Family History\n\n* **Mother:** Hypothyroidism (diagnosed at 55)\n* **Maternal grandmother:** Severe osteoarthritis\n* **Father:** Well-controlled hypertension; Type 2 diabetes mellitus (diagnosed in late 60s)\n* **Sibling:** One younger brother, healthy\n",
+    "color": "#ffffff",
+    "rotation": 0,
+    "agentData": {
+      "title": "Patient Profile",
+      "markdown": "\n## Identifiers\n\n* **Name:** Sarah Miller\n* **Age:** 43\n* **DOB:** October 15, 1980\n* **Sex:** Female\n* **Marital Status:** Married\n* **Address:** 123 Maple Drive, Anytown, USA\n* **Occupation:** Senior accountant\n* **Primary Language:** English\n* **Phone:** (555) 123-4567\n\n## Lifestyle\n\n* **Activity:** Moderately active but constrained by condition\n* **Exercise:** Gentle stretching and short walks a few times a week\n* **Tobacco:** Non-smoker\n* **Alcohol:** Occasional (typically one glass of wine during social gatherings)\n* **Diet:** Generally balanced, whole foods; occasional comfort eating with increased pain or fatigue\n* **Sleep:** Frequently disrupted due to discomfort → chronic fatigue\n* **Limitations:** Persistent joint pain and stiffness, especially mornings\n\n## Medical History\n\n* **Primary condition:** Severe polyarticular rheumatoid arthritis (RA), diagnosed in early thirties\n* **Initial presentation:** Symmetrical pain and swelling in hands, wrists, and feet → later knees and shoulders\n* **Early treatments:**\n\n  * Hydroxychloroquine **200 mg daily**\n  * Sulfasalazine **500 mg twice daily**\n    *Outcome:* Moderate relief; did not fully control inflammation\n* **Past 5 years:** High disease activity with joint erosion and persistent synovitis → transitioned to **Tofacitinib (Xeljanz) 5 mg twice daily**\n  *Outcome:* Significant reduction in joint pain and swelling; **morning stiffness 1–2 hours** and **generalized fatigue** persist\n* **Dermatologic symptoms:** Intermittent red, scaly skin patches on elbows and knees → managed with **topical desoximetasone cream 0.25% once daily**\n* **Other major conditions:** None reported\n* **Current status:** Managed but daily challenges related to RA\n\n## Medications\n\n* **Current:**\n\n  * **Tofacitinib (Xeljanz) 5 mg twice daily**\n  * **Desoximetasone cream 0.25%** to skin lesions **once daily**\n  * **Ibuprofen 400 mg as needed** for breakthrough pain\n* **Past (discontinued for inadequate control):**\n\n  * **Hydroxychloroquine 200 mg daily**\n  * **Sulfasalazine 500 mg twice daily**\n\n## Allergies\n\n* **Penicillin:** Generalized rash\n* **Food allergies:** None known\n\n## Family History\n\n* **Mother:** Hypothyroidism (diagnosed at 55)\n* **Maternal grandmother:** Severe osteoarthritis\n* **Father:** Well-controlled hypertension; Type 2 diabetes mellitus (diagnosed in late 60s)\n* **Sibling:** One younger brother, healthy\n"
+    },
+    "createdAt": "2025-10-07T16:16:23.245Z",
+    "updatedAt": "2025-10-09T06:31:57.101Z"
+  },
+  {
+    "id": "item-1759906076097-tkktws",
+    "type": "agent",
+    "x": 110,
+    "y": 320,
+    "width": 520,
+    "height": 1142,
+    "content": "\n# Risk Level: high\n\n# Reasoning: \nThe patient is at high risk for undiagnosed or progressing liver injury due to a critical and sustained absence of liver function test (LFT) monitoring after February 2025, precisely when exposed to multiple highly hepatotoxic agents. Key exposures include Methotrexate (15mg weekly, re-introduced despite prior GI intolerance and inconsistent Folic Acid intake) and turmeric supplements (reported in October 2024), both known causes of Drug-Induced Liver Injury (DILI). The patient's debilitating fatigue has been worsening and intensifying from late 2024 into 2026, temporally aligning with these exposures and the lack of monitoring, suggesting potential undetected liver dysfunction. Furthermore, significant metabolic risk factors such as Class I obesity, hypertension, hyperlipidemia, and newly diagnosed Type 2 Diabetes Mellitus predispose the patient to Non-alcoholic Fatty Liver Disease (NAFLD)/Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD), which increases susceptibility to DILI. The absence of viral serologies and autoimmune markers leaves alternative liver conditions unexcluded.\n\n# Evidence: \n- Critical and sustained data gap in liver function test (LFT) monitoring after February 2025, despite introduction of high-risk medications.\n- Re-introduction of Methotrexate (MTX) 15mg weekly around September 2025, despite prior gastrointestinal intolerance to the drug and inconsistent Folic Acid intake.\n- Patient reported using turmeric supplements in October 2024, an agent with emerging high hepatotoxic potential.\n- Debilitating chronic fatigue, described as worsening and intensifying from late 2024/early 2025 into 2026, temporally aligns with high-risk drug exposures and cessation of LFT monitoring.\n- Patient has significant metabolic risk factors for NAFLD/MASLD including Class I obesity (BMI 27-29.8 kg/m²), hypertension, hyperlipidemia, and newly diagnosed Type 2 Diabetes Mellitus (February 2026).\n- Specific serologies for Hepatitis A, B, and C and autoimmune markers (ANA, ASMA, LKM-1) were not provided, leaving alternative diagnoses unexcluded.\n\n# Probability: 80%\n# Probability Reasoning: \nThe patient is at high risk due to the re-introduction of Methotrexate and turmeric use, both known hepatotoxins, coinciding with worsening debilitating fatigue and a critical absence of liver function test (LFT) monitoring after February 2025. Significant metabolic risk factors for NAFLD/MASLD further increase DILI susceptibility, creating a strong likelihood of undiagnosed or progressing liver injury.",
+    "color": "#ffffff",
+    "rotation": 0,
+    "agentData": {
+      "title": "Patient Risk Notification",
+      "markdown": "\n# Risk Level: high\n\n# Reasoning: \nThe patient is at high risk for undiagnosed or progressing liver injury due to a critical and sustained absence of liver function test (LFT) monitoring after February 2025, precisely when exposed to multiple highly hepatotoxic agents. Key exposures include Methotrexate (15mg weekly, re-introduced despite prior GI intolerance and inconsistent Folic Acid intake) and turmeric supplements (reported in October 2024), both known causes of Drug-Induced Liver Injury (DILI). The patient's debilitating fatigue has been worsening and intensifying from late 2024 into 2026, temporally aligning with these exposures and the lack of monitoring, suggesting potential undetected liver dysfunction. Furthermore, significant metabolic risk factors such as Class I obesity, hypertension, hyperlipidemia, and newly diagnosed Type 2 Diabetes Mellitus predispose the patient to Non-alcoholic Fatty Liver Disease (NAFLD)/Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD), which increases susceptibility to DILI. The absence of viral serologies and autoimmune markers leaves alternative liver conditions unexcluded.\n\n# Evidence: \n- Critical and sustained data gap in liver function test (LFT) monitoring after February 2025, despite introduction of high-risk medications.\n- Re-introduction of Methotrexate (MTX) 15mg weekly around September 2025, despite prior gastrointestinal intolerance to the drug and inconsistent Folic Acid intake.\n- Patient reported using turmeric supplements in October 2024, an agent with emerging high hepatotoxic potential.\n- Debilitating chronic fatigue, described as worsening and intensifying from late 2024/early 2025 into 2026, temporally aligns with high-risk drug exposures and cessation of LFT monitoring.\n- Patient has significant metabolic risk factors for NAFLD/MASLD including Class I obesity (BMI 27-29.8 kg/m²), hypertension, hyperlipidemia, and newly diagnosed Type 2 Diabetes Mellitus (February 2026).\n- Specific serologies for Hepatitis A, B, and C and autoimmune markers (ANA, ASMA, LKM-1) were not provided, leaving alternative diagnoses unexcluded.\n\n# Probability: 80%\n# Probability Reasoning: \nThe patient is at high risk due to the re-introduction of Methotrexate and turmeric use, both known hepatotoxins, coinciding with worsening debilitating fatigue and a critical absence of liver function test (LFT) monitoring after February 2025. Significant metabolic risk factors for NAFLD/MASLD further increase DILI susceptibility, creating a strong likelihood of undiagnosed or progressing liver injury."
+    },
+    "createdAt": "2025-10-08T06:47:56.098Z",
+    "updatedAt": "2025-10-09T06:31:27.259Z"
+  },
+  {
+    "id": "item-1759906219477-i2fjcb",
+    "type": "todo",
+    "x": 410,
+    "y": 220,
+    "width": 420,
+    "height": 433,
+    "content": "Todo List",
+    "color": "#ffffff",
+    "rotation": 0,
+    "todoData": {
+      "title": "Review Patient Data and Explain Risk Notification",
+      "description": "Comprehensive review of Sarah Miller's patient data, followed by a detailed explanation of the risk notification concerning potential liver injury.",
+      "todos": [
+        {
+          "text": "1. Access and review all EHR data for Sarah Miller across different encounters and specialties.",
+          "status": "todo"
+        },
+        {
+          "text": "2. Summarize key findings from each EHR record, including diagnoses, medications, lab results, and imaging reports.",
+          "status": "todo"
+        },
+        {
+          "text": "3. Analyze the Patient Risk Notification regarding potential liver injury, paying close attention to the reasoning and evidence provided.",
+          "status": "todo"
+        },
+        {
+          "text": "4. Prepare a concise explanation of the risk notification for discussion with relevant healthcare providers.",
+          "status": "todo"
+        },
+        {
+          "text": "5. Document the review process and key discussion points.",
+          "status": "todo"
+        }
+      ]
+    },
+    "createdAt": "2025-10-08T06:50:19.477Z",
+    "updatedAt": "2025-10-08T06:50:19.733Z"
+  }
+]
