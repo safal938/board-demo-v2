@@ -386,8 +386,11 @@ const Canvas = ({
       (window as any).centerOnItem = centerOnItem;
     }
 
-    // Listen for SSE focus events from server
-    const eventSource = new EventSource(API_ENDPOINTS.EVENTS);
+    // Listen for SSE focus events from server (local dev only)
+    // SSE doesn't work on serverless - use polling instead
+    if (process.env.NODE_ENV === 'development') {
+      try {
+        const eventSource = new EventSource(API_ENDPOINTS.EVENTS);
 
     eventSource.addEventListener("focus-item", (event) => {
       try {
@@ -434,9 +437,13 @@ const Canvas = ({
       }
     });
 
-    return () => {
-      eventSource.close();
-    };
+        return () => {
+          eventSource.close();
+        };
+      } catch (error) {
+        console.warn('SSE not available:', error);
+      }
+    }
   }, [centerOnItem, onFocusRequest]);
 
   // Expose helper to place an item at current viewport center and persist
