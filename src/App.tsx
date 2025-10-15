@@ -261,7 +261,8 @@ function BoardApp() {
             data.item.id,
             data.item.type
           );
-          // Add the new item to the state
+          
+          // Add the new item to the state with patient data attached
           setItems((prev) => {
             // Check if item already exists
             const exists = prev.some((item) => item.id === data.item.id);
@@ -269,12 +270,35 @@ function BoardApp() {
               console.log("⚠️ Item already exists, skipping:", data.item.id);
               return prev;
             }
+            
+            // Attach patient data to the new item
+            let itemWithData = { ...data.item };
+            
+            if (patientData) {
+              if (itemWithData.type === 'single-encounter-document') {
+                const encounters = patientData.encounters || [];
+                const encounterData = encounters[itemWithData.encounterIndex];
+                itemWithData = {
+                  ...itemWithData,
+                  patientData: patientData,
+                  encounterData: encounterData
+                };
+                console.log(`📄 Attached data to new encounter ${itemWithData.encounterIndex}`);
+              } else if (itemWithData.type === 'adverse-event-dashboard' || itemWithData.type === 'data-zone') {
+                itemWithData = {
+                  ...itemWithData,
+                  patientData: patientData
+                };
+                console.log(`📊 Attached patient data to new dashboard item ${itemWithData.id}`);
+              }
+            }
+            
             console.log(
               "✅ Adding new item to canvas:",
-              data.item.id,
-              data.item.type
+              itemWithData.id,
+              itemWithData.type
             );
-            return [...prev, data.item];
+            return [...prev, itemWithData];
           });
         }
       } catch (error) {
