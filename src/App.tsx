@@ -249,8 +249,13 @@ function BoardApp() {
     loadData();
   }, []);
 
-  // Listen for new items via SSE
+  // Listen for new items via SSE (local dev only)
   useEffect(() => {
+    // SSE doesn't work on serverless - skip in production
+    if (process.env.NODE_ENV !== 'development') {
+      return;
+    }
+
     const eventSource = new EventSource(API_ENDPOINTS.EVENTS);
 
     eventSource.addEventListener('new-item', (event) => {
